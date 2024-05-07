@@ -1,15 +1,14 @@
-'use client'
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
-export const Hero=()=> {
+import placeholderHero from "@/assets/placeholderHero.jpg";
+
+export const Hero = () => {
   return (
-    <div>
-    <video width="750" height="500" controls>
-      <source src="/Users/sabiraga/Desktop/projects/BFC/bfc/assets/heroVideo.mp4" type="video/mp4" />
-      <source src="/Users/sabiraga/Desktop/projects/BFC/bfc/assets/heroVideo.mp4" type="video/ogg" />
-    </video>
-  </div>
+    <div className="h-[500px] mt-16  ">
+      <div className="justify-center flex h-[500px]">
+        <Image src={placeholderHero} width={1300} alt="placeholder"/>
+      </div>
+    </div>
   );
-}
-
-
+};

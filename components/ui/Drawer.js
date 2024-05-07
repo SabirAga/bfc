@@ -5,7 +5,6 @@ import {
   Box,
   Typography,
   IconButton,
-  ImageListItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import List from "@mui/material/List";
