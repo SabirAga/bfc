@@ -1,12 +1,14 @@
+import { MenusCarousel } from "./bodyComponents/menuCarousel";
 import { Products } from "./bodyComponents/products";
-import CarouselSlick from "./ui/carousel";
-import CarouselComp from "./ui/carousel";
+
+import { SingleProductCarousel } from "./bodyComponents/singlesCarousel";
 
 export const Body = () => {
   return (
-    <div className="mt-4 h-[800px] bg-orange-300">
+    <div className="mt-4 h-[1000px] bg-orange-300">
       <Products />
-      <CarouselComp />
+      <SingleProductCarousel />
+      <MenusCarousel />
     </div>
   );
 };

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import logoImg from "@/assets/logoBFC.jpg";
+import logoImg from "@/public/images/logoBFC.jpg";
 import { DrawerComp } from "./ui/Drawer";
 
 export const MainHeader = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import placeholderHero from "@/assets/placeholderHero.jpg";
+import placeholderHero from "@/public/images/placeholderHero.jpg";
 
 export const Hero = () => {
   return (

@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  Drawer,
-  Box,
-  Typography,
-  IconButton,
-} from "@mui/material";
+import { Drawer, Box, Typography, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
@@ -15,7 +10,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { useState } from "react";
 
-import logoImg from "@/assets/logoBFC.jpg";
+import logoImg from "@/public/images/logoBFC.jpg";
 import Image from "next/image";
 
 import LunchDiningIcon from "@mui/icons-material/LunchDining";
@@ -53,7 +48,7 @@ export const DrawerComp = (props) => {
         <ListItem disablePadding>
           <ListItemButton component="a">
             <ListItemIcon>
-              <FastfoodIcon sx={{ fontSize: 32 }}/>
+              <FastfoodIcon sx={{ fontSize: 32 }} />
             </ListItemIcon>
             <ListItemText
               primary={
@@ -69,7 +64,7 @@ export const DrawerComp = (props) => {
         <ListItem disablePadding>
           <ListItemButton component="a">
             <ListItemIcon>
-              <RestaurantIcon sx={{ fontSize: 32 }}/>
+              <RestaurantIcon sx={{ fontSize: 32 }} />
             </ListItemIcon>
             <ListItemText
               primary={
@@ -95,7 +90,7 @@ export const DrawerComp = (props) => {
         aria-label="logo"
         onClick={() => setDrawerOpen(true)}
       >
-        <MenuIcon sx={{ fontSize: 30 }}/>
+        <MenuIcon sx={{ fontSize: 30 }} />
       </IconButton>
       <Drawer
         anchor="left"
