@@ -4,45 +4,62 @@ import { SlickCarousel } from "../ui/carouselComponent";
 
 const images = [
   {
-    name: "Solo",
-    src: "/images/products/menus/Solo.jpeg",
+    title: "Family menu",
+    src: "/images/products/menus/family.jpeg",
   },
   {
-    name: "Crunchy Menu",
+    title: "Friends menu",
+    src: "/images/products/menus/test/friends.jpeg",
+  },
+  {
+    title: "maxi bucket menu",
+    src: "/images/products/menus/maxiBucket.jpeg",
+  },
+  {
+    title: "menu Hotwings",
+    src: "/images/products/menus/menuHotwings.jpeg",
+  },
+  {
+    title: "menu Tenders",
+    src: "/images/products/menus/menuTenders.jpeg",
+  },
+  {
+    title: "solo bucket",
+    src: "/images/products/menus/solo.jpeg",
+  },
+  {
+    title: "chicken Burger Meal",
+    src: "/images/products/menus/chickenBurgerMeal.jpeg",
+  },
+  {
+    title: "meal Maxi Meat",
+    src: "/images/products/menus/mealMaxiMeat.jpeg",
+  },
+  {
+    title: "meal Meat Burger",
+    src: "/images/products/menus/mealMeatBurger.jpeg",
+  },
+  {
+    title: "crunchy Menu",
     src: "/images/products/menus/crunchyMenu.jpeg",
   },
   {
-    name: "Meal Chicken Burger",
-    src: "/images/products/menus/mealChickenBurger.jpeg",
+    title: "maxi Chicken Menu",
+    src: "/images/products/menus/maxiChickenMenu.jpeg",
   },
   {
-    name: "Meal Maxi Chicken",
-    src: "/images/products/menus/mealMaxiChicken.jpeg",
+    title: "menu Chicken Burger",
+    src: "/images/products/menus/menuChickenBurger.jpeg",
   },
   {
-    name: "Meal Maxi Meat",
-    src: "/images/products/menus/mealMaxiMeat.jpeg",
-  },
-
-  {
-    name: "Meal Meat",
-    src: "/images/products/menus/mealMeat.jpeg",
-  },
-
-  {
-    name: "Menu Maxi Meat",
-    src: "/images/products/menus/menuMaxiMeat.jpeg",
-  },
-
-  {
-    name: "Menu Meat Burger",
-    src: "/images/products/menus/menuMeatBurger.jpeg",
+    title: "menu Fish Burger",
+    src: "/images/products/menus/menuFishBurger.jpeg",
   },
 ];
 
 export const MenusCarousel = () => {
   return (
-    <div className="my-20">
+    <div className="my-24">
       <SlickCarousel images={images} />
     </div>
   );

@@ -1,5 +1,6 @@
 const withMT = require("@material-tailwind/react/utils/withMT");
 
+
 // /** @type {import('tailwindcss').Config} */
 module.exports = withMT({
   content: [
@@ -11,6 +12,7 @@ module.exports = withMT({
     extend: {
       fontFamily: {
         arvo: ["Arvo", "sans-serif"],
+        montAlt: ["Montserrat Alternates", "sans-serif"],
       },
     },
   },

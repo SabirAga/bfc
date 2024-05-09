@@ -4,61 +4,62 @@ import {SlickCarousel} from "../ui/carouselComponent";
 
 const images = [
     {
-      name: "10 tenders",
+      title: "10 Tenders",
       src: "/images/products/singleItems/10tenders.jpeg",
     },
     {
-      name: "26 hotwings",
-      src: "/images/products/singleItems/26Hotwings.jpeg",
+      title: "26 Hotwings",
+      src: "/images/products/singleItems/26hotwings.jpeg",
     },
     {
-      name: "bucket",
-      src: "/images/products/singleItems/BucketMiet10.jpeg",
+      title: "Bucket Mix",
+      src: "/images/products/singleItems/bucketMix.jpeg",
     },
     {
-      name: "chicken burger",
-      src: "/images/products/singleItems/ChickenBurger.jpeg",
+      title: "family Bucket",
+      src: "/images/products/singleItems/familyBucket.jpeg",
     },
     {
-      name: "crunchy burger",
-      src: "/images/products/singleItems/CrunchyBurger.jpeg",
+      title: "duo bucket",
+      src: "/images/products/singleItems/duoBucket.jpeg",
+    },
+
+    {
+      title: "maxi Bucket",
+      src: "/images/products/singleItems/maxiBucket.jpeg",
     },
     {
-      name: "duo bucket",
-      src: "/images/products/singleItems/DuoBucket.jpeg",
+      title: "chicken Burger",
+      src: "/images/products/singleItems/chickenBurger.jpeg",
     },
     {
-      name: "family bucket",
-      src: "/images/products/singleItems/FamilyBucket.jpeg",
+      title: "maxi chicken",
+      src: "/images/products/singleItems/maxiChicken.jpeg",
     },
     {
-      name: "fish burger",
-      src: "/images/products/singleItems/FishBurger.jpeg",
+      title: "meat Burger",
+      src: "/images/products/singleItems/meatBurger.jpeg",
     },
     {
-      name: "maxi bucket",
-      src: "/images/products/singleItems/MaxiBucket.jpeg",
+      title: "maxi Meat",
+      src: "/images/products/singleItems/maxiMeat.jpeg",
     },
     {
-      name: "maxi chicken",
-      src: "/images/products/singleItems/MaxiChicken.jpeg",
+      title: "crunchy Burger",
+      src: "/images/products/singleItems/crunchyBurger.jpeg",
     },
     {
-      name: "maximeat",
-      src: "/images/products/singleItems/MaxiMeat.jpeg",
+      title: "fish Burger",
+      src: "/images/products/singleItems/fishBurger.jpeg",
     },
     {
-      name: "meat burger",
-      src: "/images/products/singleItems/MeatBurger.jpeg",
+      title: "wrap",
+      src: "/images/products/singleItems/wrap.jpeg",
     },
     {
-      name: "wrap",
-      src: "/images/products/singleItems/Wrap.jpeg",
-    },
-    {
-      name: "frites",
-      src: "/images/products/singleItems/frites.jpeg",
-    },
+      title: "sandwich",
+      src: "/images/products/singleItems/sandwich.jpeg",
+    }
   ];
 
   export const SingleProductCarousel =()=>{

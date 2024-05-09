@@ -1,14 +1,22 @@
-import React from "react";
-import Image from "next/image";
+"use client";
 
-import placeholderHero from "@/public/images/placeholderHero.jpg";
+import React from "react";
+import { VideoComponent } from "./videoComponent";
 
 export const Hero = () => {
   return (
-    <div className="h-[500px] mt-16  ">
-      <div className="justify-center flex h-[500px]">
-        <Image src={placeholderHero} width={1300} alt="placeholder"/>
+    <div className="h-[500px] mt-24  mx-auto ">
+      <div className=" h-full ">
+       <VideoComponent />
+        
+
+        {/* <video width="750" height="500" autoPlay>
+          <source src="/images/heroVideo.mp4" type="video/mp4"/>
+        </video> */}
       </div>
     </div>
   );
 };
+
+
+// h-[calc(65vh+100px)]

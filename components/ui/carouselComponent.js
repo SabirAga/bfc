@@ -34,18 +34,18 @@ function SamplePrevArrow(props) {
     return (
       <div className="w-4/5 m-auto ">
         <div className="">
-          <Slider {...settings} className="h-[300px]">
+          <Slider {...settings} className="h-[300px] ">
             {images.map((image) => (
-              <div className="flex text-center">
+              <div key={image.title} className="flex text-center ">
                 <Image
                   src={image.src}
-                  alt={image.name}
+                  alt={image.title}
                   height={300}
                   width={300}
-                  className="px-2 rounded-3xl h-[300px] w-[400px]"
+                  className="px-2 rounded-3xl h-[300px] w-[400px] "
                 />
                 <p className="pt-2 uppercase text-2xl font-bold text-white">
-                  {image.name}
+                  {image.title}
                 </p>
               </div>
             ))}

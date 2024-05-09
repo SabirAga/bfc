@@ -17,7 +17,7 @@ import LunchDiningIcon from "@mui/icons-material/LunchDining";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 
-export const DrawerComp = (props) => {
+export const DrawerComp = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const DrawerList = (
@@ -28,7 +28,7 @@ export const DrawerComp = (props) => {
       display="grid"
       onClick={() => setDrawerOpen(true)}
     >
-      <List sx={{ fontFamily: "arvo" }}>
+      <List sx={{ fontFamily: "montAlt" }}>
         <ListItem disablePadding>
           <ListItemButton component="a">
             <ListItemIcon>
@@ -36,7 +36,7 @@ export const DrawerComp = (props) => {
             </ListItemIcon>
             <ListItemText
               primary={
-                <Typography style={{ fontSize: "32px", fontFamily: "arvo" }}>
+                <Typography style={{ fontSize: "32px", fontFamily: "montAlt" }}>
                   Products
                 </Typography>
               }

@@ -1,62 +1,59 @@
 "use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useState } from "react";
 
 import logoImg from "@/public/images/logoBFC.jpg";
 import { DrawerComp } from "./ui/Drawer";
 
 export const MainHeader = () => {
-  const [isShrunk, setIsShrunk] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [shrunk, setShrunk] = useState(false);
 
-  const handleOpen = (e) => {
-    e.preventDefault();
-    setIsOpen(!isOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShrunk(true);
+      } else {
+        setShrunk(false);
+      }
+    };
 
-  //   useEffect(() => {
-  //     const handleScroll = () => {
-  //       if (window.scrollY > 50) {
-  //         setShrunk(true);
-  //       } else {
-  //         setShrunk(false);
-  //       }
-  //     };
+    window.addEventListener("scroll", handleScroll);
 
-  //     window.addEventListener("scroll", handleScroll);
-
-  //     return () => {
-  //       window.removeEventListener("scroll", handleScroll);
-  //     };
-  //   }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const mainHeaderClasses =
-    "flex justify-between items-center bg-[#ff6307] h-[100px] px-5";
+    "flex justify-between items-center bg-[#E4E4D1] h-[70px] px-5 top-0 fixed  w-full z-10";
 
+    // {shrunk ? "flex text-black text-2xl font-bold font-arvo gap-4 -translate-x-5 ":"flex text-black text-2xl font-bold font-arvo gap-8 "}
   return (
     <div className={mainHeaderClasses}>
-      <header className="flex items-center gap-10 ">
-        <div>
+      <header className={shrunk? "flex items-center gap-1 -translate-x-5 transition-all duration-300":"flex items-center gap-8 transition-all duration-300"}>
+        <div className="pl-16">
           <Image
             src={logoImg}
             alt="logo"
-            height={150}
-            className="pl-5 pt-20 "
+            height={170}
+            className={
+              shrunk
+                ? "scale-75 pl-5 pt-24  -translate-y-1 transition-all duration-300"
+                : "pl-5 pt-24 transition-all duration-300"
+            }
           />
         </div>
-
         <DrawerComp />
-
         <nav>
-          <ul className="flex text-white text-2xl font-bold gap-8 uppercase font-arvo">
+          <ul className="flex text-black text-2xl font-bold font-arvo gap-6">
             <li>
-              <a href="">products</a>
+              <a href="">Products</a>
             </li>
             <li>
-              <a href="">deals</a>
+              <a href="">Deals</a>
             </li>
             <li>
-              <a href="">restaurants</a>
+              <a href="">Restaurants</a>
             </li>
           </ul>
         </nav>
