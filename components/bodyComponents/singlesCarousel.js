@@ -59,7 +59,9 @@ const images = [
     {
       title: "sandwich",
       src: "/images/products/singleItems/sandwich.jpeg",
-    }
+    },
+    
+ 
   ];
 
   export const SingleProductCarousel =()=>{

@@ -1,8 +1,5 @@
-const withMT = require("@material-tailwind/react/utils/withMT");
-
-
 // /** @type {import('tailwindcss').Config} */
-module.exports = withMT({
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,10 +8,12 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        arvo: ["Arvo", "sans-serif"],
-        montAlt: ["Montserrat Alternates", "sans-serif"],
+        // 'montAlt': ["Montserrat Alternates", "sans-serif"],
+        // cooperBlack: ["Cooper Black", "serif"],
+        // roboto: ["Roboto", "sans-serif"],
+        // letta: ["Lexend Zetta", "sans-serif"],
       },
     },
   },
   plugins: [],
-});
+};

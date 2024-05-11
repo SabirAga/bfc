@@ -1,15 +1,46 @@
 import { MenusCarousel } from "./bodyComponents/menuCarousel";
-
 import { SingleProductCarousel } from "./bodyComponents/singlesCarousel";
+
+import Image from "next/image";
 
 export const Body = () => {
   return (
-    <div className="mt-12 h-[900px] bg-orange-300">
-      <h1 className="text-4xl py-8  font-arvo text-center text-white uppercase font-bold">
-        Products
-      </h1>
-      <SingleProductCarousel />
-      <MenusCarousel />
-    </div>
+    <>
+      <div className="">
+        <div className=" bg-[#da0000]">
+          <h1 className="text-4xl py-6  w-[300px] mx-auto font-cooperBlack text-center text-black  font-bold">
+            Hello!
+          </h1>
+
+          <div className="flex justify-between w-2/3 mx-auto pt-4">
+            <Image
+              src="/images/photos/feel.jpeg"
+              width={400}
+              height={400}
+              className="rounded-xl"
+              alt=""
+            />
+            <Image
+              src="/images/photos/menu.jpeg"
+              width={400}
+              height={400}
+              className="rounded-xl"
+              alt=""
+            />
+            <Image
+              src="/images/photos/soHot.jpeg"
+              width={400}
+              height={400}
+              className="rounded-xl"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
+{
+  /* <SingleProductCarousel /> 
+      <MenusCarousel />  */
+}

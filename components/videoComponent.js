@@ -13,7 +13,7 @@ export const VideoComponent = () => {
         <ReactPlayer
           url="/images/heroVideo.mp4"
           playing
-          width="100%"
+          width='100%'
           height="100%"
           muted
           loop

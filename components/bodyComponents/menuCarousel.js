@@ -9,7 +9,7 @@ const images = [
   },
   {
     title: "Friends menu",
-    src: "/images/products/menus/test/friends.jpeg",
+    src: "/images/products/menus/friends.jpeg",
   },
   {
     title: "maxi bucket menu",
