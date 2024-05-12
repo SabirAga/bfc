@@ -8,7 +8,7 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <div className=" pt-[65px] mb-[35px]">
-      <div className=" px-[50px]  ">
+      <div className="px-[50px]">
         <Image src={image} className="mx-auto border rounded-3xl" />
         {/* <VideoComponent /> */}
       </div>

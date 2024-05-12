@@ -1,43 +1,87 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import { MenusCarousel } from "./bodyComponents/menuCarousel";
 import { SingleProductCarousel } from "./bodyComponents/singlesCarousel";
 
-import Image from "next/image";
+import bodyImg from "@/public/images/placeholders/bodyImg.jpg";
+
+import LunchDiningIcon from "@mui/icons-material/LunchDining";
+import RestaurantIcon from "@mui/icons-material/Restaurant";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 export const Body = () => {
   return (
-    <>
-      <div className="">
-        <div className=" bg-[#da0000]">
-          <h1 className="text-4xl py-6  w-[300px] mx-auto font-cooperBlack text-center text-black  font-bold">
-            Hello!
-          </h1>
-
-          <div className="flex justify-between w-2/3 mx-auto pt-4">
-            <Image
-              src="/images/photos/feel.jpeg"
-              width={400}
-              height={400}
-              className="rounded-xl"
-              alt=""
-            />
-            <Image
-              src="/images/photos/menu.jpeg"
-              width={400}
-              height={400}
-              className="rounded-xl"
-              alt=""
-            />
-            <Image
-              src="/images/photos/soHot.jpeg"
-              width={400}
-              height={400}
-              className="rounded-xl"
-              alt=""
-            />
+    <div className="px-[50px]">
+      <div className="mt-[55px] grid">
+        <h1 className="text-[52px] text-center px-3 font-bold">Hello!</h1>
+        <div id="container" className="grid justify-items-center">
+          <div className="bg-[#f2f2f2] mt-12 flex justify-center gap-8 items-center border-0 rounded-2xl px-[50px] py-[40px] shadow-lg">
+            <Link
+              href={"#"}
+              className="border flex items-center justify-between rounded-2xl bg-white w-[300px] px-[40px] py-[25px] text-xl shadow-md hover:shadow-2xl hover:scale-105"
+            >
+              <div className="flex items-center">
+                <LunchDiningIcon sx={{ fontSize: 35 }} />
+                <p className="ml-[30px]">
+                  Explore <span className="font-bold">Products</span>
+                </p>
+              </div>
+              <ArrowForwardIosIcon className="relative -right-5" />
+            </Link>
+            <Link
+              href={"#"}
+              className="border flex items-center justify-between rounded-2xl bg-white w-[300px] px-[40px] py-[25px] text-xl shadow-md hover:shadow-2xl hover:scale-105"
+            >
+              <div className="flex items-center">
+                <RestaurantIcon sx={{ fontSize: 35 }} />
+                <p className="ml-[30px] max-w-[200px] ">
+                  Our <span className="font-bold">Restaurants</span>
+                </p>
+              </div>
+              <ArrowForwardIosIcon className="relative -right-5" />
+            </Link>
           </div>
         </div>
+
+        <div className="mt-9 mb-[65px]">
+          <div className="px-3">
+            <div className="flex justify-between gap-[18px]">
+              <div>
+                <Image
+                  src={bodyImg}
+                  width={440}
+                  height={550}
+                  className="rounded-xl"
+                  alt=""
+                />
+              </div>
+              <div>
+                <Image
+                  src={bodyImg}
+                  width={440}
+                  height={550}
+                  className="rounded-xl"
+                  alt=""
+                />
+              </div>
+              <div>
+                <Image
+                  src={bodyImg}
+                  width={440}
+                  height={550}
+                  className="rounded-xl"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
-    </>
+    </div>
   );
 };
 {
