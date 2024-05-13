@@ -103,6 +103,7 @@ export const DrawerComp = () => {
             width={250}
             height={150}
             className=" max-w-full h-auto"
+            alt="logo"
           />
         </div>
         {DrawerList}

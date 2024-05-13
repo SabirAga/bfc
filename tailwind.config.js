@@ -1,4 +1,6 @@
 // /** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,9 +11,10 @@ module.exports = {
     extend: {
       fontFamily: {
         // 'montAlt': ["Montserrat Alternates", "sans-serif"],
-        // cooperBlack: ["Cooper Black", "serif"],
         // roboto: ["Roboto", "sans-serif"],
         // letta: ["Lexend Zetta", "sans-serif"],
+
+        cooperBlack: ["cooper-black-std", "serif"],
       },
     },
   },

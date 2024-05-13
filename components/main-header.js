@@ -53,15 +53,15 @@ export const MainHeader = () => {
             <DrawerComp />
           </div>
           <nav>
-            <ul className="flex text-black text-xl leading-5 font-bold gap-5 pt-4 pb-[6px] ">
+            <ul className="flex text-black text-xl leading-5 font-bold gap-5 pt-4 pb-[6px]  font-cooperBlack">
               <li>
-                <a href="">Products</a>
+                <a href="#">Products</a>
               </li>
               <li>
-                <a href="">Deals</a>
+                <a href="#">Deals</a>
               </li>
               <li>
-                <a href="">Restaurants</a>
+                <a href="#">Restaurants</a>
               </li>
             </ul>
           </nav>

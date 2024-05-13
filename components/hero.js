@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <div className=" pt-[65px] mb-[35px]">
       <div className="px-[50px]">
-        <Image src={image} className="mx-auto border rounded-3xl" />
+        <Image src={image} className="mx-auto border rounded-3xl" alt="placeholder"/>
         {/* <VideoComponent /> */}
       </div>
     </div>
