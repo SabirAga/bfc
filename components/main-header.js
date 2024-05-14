@@ -70,7 +70,7 @@ export const MainHeader = () => {
       <select
         name="lang"
         id="lang"
-        className=" rounded-md mt-1 top-5 bg-transparent text-xl leading-5 font-bold"
+        className=" rounded-md mt-1 top-5 bg-transparent text-xl leading-5 font-bold h"
       >
         <option
           value="en"

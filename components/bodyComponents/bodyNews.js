@@ -17,7 +17,7 @@ export const BodyNews = () => {
       <h1 className="text-[54px] text-center px-3 font-bold font-cooperBlack mb-5 ">
         What's new?!
       </h1>
-      <div className="p-3">
+      <div className="">
         <div className="p-[50px]  bg-[#f8f4f4] rounded-lg">
           <div className="pb-7 ">
             <div id="swiper" className=" flex gap-8 ">

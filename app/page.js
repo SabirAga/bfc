@@ -5,13 +5,11 @@ import { Hero } from "@/components/hero";
 export default function Home() {
   return (
     <>
-      <div>
-        <Hero />
-      </div>
-      <div>
-        <Body />
-      </div>
-      {/* <Footer /> */}
+      <Hero />
+
+      <Body />
+
+      <Footer />
     </>
   );
 }
