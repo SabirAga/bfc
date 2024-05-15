@@ -28,7 +28,7 @@ export const DrawerComp = () => {
       display="grid"
       onClick={() => setDrawerOpen(true)}
     >
-      <List sx={{ fontFamily: "montAlt" }}>
+      <List sx={{ fontFamily: "cooper" }}>
         <ListItem disablePadding>
           <ListItemButton component="a">
             <ListItemIcon>
@@ -36,8 +36,8 @@ export const DrawerComp = () => {
             </ListItemIcon>
             <ListItemText
               primary={
-                <Typography style={{ fontSize: "32px", fontFamily: "montAlt" }}>
-                  Products
+                <Typography style={{ fontSize: "30px", fontFamily: "cooper" }}>
+                  <div className="font-cooper">Products</div>
                 </Typography>
               }
             />
@@ -52,8 +52,8 @@ export const DrawerComp = () => {
             </ListItemIcon>
             <ListItemText
               primary={
-                <Typography style={{ fontSize: "32px", fontFamily: "arvo" }}>
-                  Deals
+                <Typography style={{ fontSize: "30px", fontFamily: "cooper" }}>
+                  <div className="font-cooper">Deals</div>
                 </Typography>
               }
             />
@@ -68,8 +68,8 @@ export const DrawerComp = () => {
             </ListItemIcon>
             <ListItemText
               primary={
-                <Typography style={{ fontSize: "32px", fontFamily: "arvo" }}>
-                  Restaurants
+                <Typography style={{ fontSize: "30px", fontFamily: "arvo" }}>
+                  <div className="font-cooper">Restaurants</div>
                 </Typography>
               }
             />

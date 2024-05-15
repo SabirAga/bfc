@@ -1,33 +1,45 @@
 import React from "react";
 
 import Image from "next/image";
-import logoImg from "@/public/images/logoBFC.jpg";
 import Link from "next/link";
-import InstagramIcon from "@mui/icons-material/Instagram";
 
-import tiktok from "@/public/icons/tiktok-icon.svg";
-import instagram from "@/public/icons/black-instagram-icon.svg";
+// import tiktok from '@/public/icons/tiktok-icon.svg';
+// import instagram from "@/public/icons/black-instagram-icon.svg";
 
 export const Footer = () => {
   return (
     <footer className="mt-[75px]  mx-[50px] border-t-2 border-[#cccccc] pt-[50px] ">
-      <div className="px-[50px]">
+      <div className="px-[50px]  font-bold">
         <div>
           <div id="left">
             <div className="pb-20  ">
               <div className="">
                 <h5 className="pb-4 text-xl font-bold">BFC</h5>
-                <div className="flex gap-40">
-                  <ul>
-                    <li className="pb-4">Products</li>
-                    <li className="pb-4">Kids</li>
-                    <li className="pb-4">Restaurants</li>
-                    <li className="pb-4">Deals</li>
-                    <li className="pb-4">Delivery</li>
+                <div className="flex gap-40 text-gray-600">
+                  <ul className="">
+                    <li className="pb-4">
+                      <Link href="#">Products</Link>
+                    </li>
+                    <li className="pb-4">
+                      <Link href="#">Kids</Link>
+                    </li>
+                    <li className="pb-4">
+                      <Link href="#">Restaurants</Link>
+                    </li>
+                    <li className="pb-4">
+                      <Link href="#">Deals</Link>
+                    </li>
+                    <li className="pb-4">
+                      <Link href="#">Delivery</Link>
+                    </li>
                   </ul>
                   <ul>
-                    <li className="pb-4">Our history</li>
-                    <li className="pb-4">Franchising</li>
+                    <li className="pb-4">
+                      <Link href="#">Our history</Link>
+                    </li>
+                    <li className="pb-4">
+                      <Link href="#">Franchising</Link>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -38,7 +50,7 @@ export const Footer = () => {
           <ul className="flex items-center space-x-6">
             <li>
               <Link href="#">
-                <Image src={tiktok} width={22} />
+                <Image src="/icons/tiktok-icon.svg" width={22} height={22} />
               </Link>
             </li>
             <li>
@@ -46,7 +58,11 @@ export const Footer = () => {
             </li>
             <li>
               <Link href="#">
-                <Image src={instagram} width={24} />
+                <Image
+                  src="/icons/black-instagram-icon.svg"
+                  width={24}
+                  height={24}
+                />
               </Link>
             </li>
           </ul>

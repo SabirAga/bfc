@@ -1,15 +1,7 @@
-
-
 import React from "react";
 import Image from "next/image";
 import bodyImgNews from "@/public/images/placeholders/placeholderNews.jpg";
 import Link from "next/link";
-
-
-
-
-
-
 
 export const BodyNews = () => {
   return (
@@ -81,7 +73,6 @@ export const BodyNews = () => {
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );

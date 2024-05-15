@@ -6,7 +6,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="stylesheet" href="https://use.typekit.net/iep4nms.css" />
+          
         </Head>
         <body>
           <Main />

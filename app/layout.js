@@ -1,7 +1,5 @@
-
 import "./globals.css";
 import { MainHeader } from "@/components/main-header";
-<link rel="stylesheet" href="https://use.typekit.net/iep4nms.css"></link>
 
 export const metadata = {
   title: "BFC",
@@ -11,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/iep4nms.css" />
+      </head>
+      <body className="font-cooper">
         <MainHeader />
         {children}
       </body>
