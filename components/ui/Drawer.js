@@ -29,51 +29,62 @@ export const DrawerComp = () => {
       onClick={() => setDrawerOpen(true)}
     >
       <List sx={{ fontFamily: "cooper" }}>
-        <ListItem disablePadding>
-          <ListItemButton component="a">
-            <ListItemIcon>
-              <LunchDiningIcon sx={{ fontSize: 32 }} />
-            </ListItemIcon>
-            <ListItemText
-              primary={
-                <Typography style={{ fontSize: "30px", fontFamily: "cooper" }}>
-                  <div className="font-cooper">Products</div>
-                </Typography>
-              }
-            />
-          </ListItemButton>
-        </ListItem>
+        <div className=" hover:text-red-500 ">
+          <ListItem disablePadding>
+            <ListItemButton component="a">
+              <ListItemIcon>
+                <LunchDiningIcon sx={{ fontSize: 32 }} />
+              </ListItemIcon>
+              <ListItemText
+                primary={
+                  <Typography
+                    style={{ fontSize: "30px", fontFamily: "cooper" }}
+                  >
+                    <div className="font-cooper">Products</div>
+                  </Typography>
+                }
+              />
+            </ListItemButton>
+          </ListItem>
+        </div>
+      </List>
+      <List>
+        <div className="hover:text-red-500 ">
+          <ListItem disablePadding>
+            <ListItemButton component="a">
+              <ListItemIcon>
+                <FastfoodIcon sx={{ fontSize: 32 }} />
+              </ListItemIcon>
+              <ListItemText
+                primary={
+                  <Typography
+                    style={{ fontSize: "30px", fontFamily: "cooper" }}
+                  >
+                    <div className="font-cooper ">Deals</div>
+                  </Typography>
+                }
+              />
+            </ListItemButton>
+          </ListItem>
+        </div>
       </List>
       <List>
         <ListItem disablePadding>
-          <ListItemButton component="a">
-            <ListItemIcon>
-              <FastfoodIcon sx={{ fontSize: 32 }} />
-            </ListItemIcon>
-            <ListItemText
-              primary={
-                <Typography style={{ fontSize: "30px", fontFamily: "cooper" }}>
-                  <div className="font-cooper">Deals</div>
-                </Typography>
-              }
-            />
-          </ListItemButton>
-        </ListItem>
-      </List>
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton component="a">
-            <ListItemIcon>
-              <RestaurantIcon sx={{ fontSize: 32 }} />
-            </ListItemIcon>
-            <ListItemText
-              primary={
-                <Typography style={{ fontSize: "30px", fontFamily: "arvo" }}>
-                  <div className="font-cooper">Restaurants</div>
-                </Typography>
-              }
-            />
-          </ListItemButton>
+          <div className="hover:text-red-500 ">
+            <ListItemButton component="a">
+              <ListItemIcon>
+                <RestaurantIcon sx={{ fontSize: 32 }} />
+              </ListItemIcon>
+
+              <ListItemText
+                primary={
+                  <Typography style={{ fontSize: "30px", fontFamily: "arvo" }}>
+                    <div className="font-cooper ">Restaurants</div>
+                  </Typography>
+                }
+              />
+            </ListItemButton>
+          </div>
         </ListItem>
       </List>
 

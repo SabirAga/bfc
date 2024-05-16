@@ -6,6 +6,7 @@ import Image from "next/image";
 import logo from "@/public/images/logo.jpeg";
 
 import { DrawerComp } from "./ui/Drawer";
+import Link from "next/link";
 
 export const MainHeader = () => {
   const [shrunk, setShrunk] = useState(false);
@@ -29,18 +30,20 @@ export const MainHeader = () => {
   return (
     <div className="flex justify-between fixed  py-[9px] px-[50px] w-full z-10 bg-white">
       <header className="flex items-center h-[50px]">
-        <div className="">
-          <Image
-            // src={logoImg}
-            src={logo}
-            alt="logo"
-            height={220}
-            className={
-              shrunk
-                ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-1 transition-all duration-300 border-0 rounded-3xl"
-                : "pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl"
-            }
-          />
+        <div>
+          <Link href="/">
+            <Image
+              // src={logoImg}
+              src={logo}
+              alt="logo"
+              height={220}
+              className={
+                shrunk
+                  ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-1 transition-all duration-300 border-0 rounded-3xl bg-transparent"
+                  : "pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl bg-transparent"
+              }
+            />
+          </Link>
         </div>
         <div
           className={
@@ -55,7 +58,7 @@ export const MainHeader = () => {
           <nav>
             <ul className="flex text-black text-xl leading-5 font-bold gap-5 pt-4 pb-[6px]  font-CustomFont">
               <li>
-                <a href="#">Products</a>
+                <Link href="/products/burgers">Products</Link>
               </li>
               <li>
                 <a href="#">Deals</a>

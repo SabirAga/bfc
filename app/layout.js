@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/iep4nms.css" />
       </head>
-      <body className="font-cooper">
+      <body className="font-cooper ">
         <MainHeader />
         {children}
       </body>
