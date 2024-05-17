@@ -4,6 +4,7 @@ import { SingleProductCarousel } from "./bodyComponents/singlesCarousel";
 import { BodyNav } from "./bodyComponents/bodyNav";
 import { BodyPhotos } from "./bodyComponents/bodyPhotos";
 import { BodyNews } from "./bodyComponents/bodyNews";
+import TestComp from "./test";
 
 export const Body = () => {
   return (

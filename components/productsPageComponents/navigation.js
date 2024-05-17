@@ -2,55 +2,55 @@ import React from "react";
 import Link from "next/link";
 
 
-function NavBarProducts(props) {
+function NavigationProducts(props) {
   return (
     <div className="px-[50px]">
       <div className="px-[50px]">
         <div>
-          <div className="mt-20 bg-gray-300 w-fit rounded-xl px-">
+          <div className="mt-36 bg-gray-200 w-fit rounded-xl px-">
             <ul className="-pt-1 ">
-              <li className="pb-5">
-                <Link href="/products/burgers">
+              <li className="pb-4">
+                <Link href="/products/burgers" className="hover:bg-slate-500">
                   <img
                     src="/icons/products/edited/burger.png"
                     alt=""
-                    className="w-32"
+                    className="w-24 hover:scale-110 duration-300"
                   />
                 </Link>
               </li>
-              <li className="pb-5">
+              <li className="pb-4">
                 <Link href="/products/buckets">
                   <img
                     src="/icons/products/edited/bucket.png"
                     alt=""
-                    className="w-32"
+                    className="w-24"
                   />
                 </Link>
               </li>
-              <li className="pb-5">
+              <li className="pb-4">
                 <Link href="/products/salads">
                   <img
                     src="/icons/products/edited/Salad.png"
                     alt=""
-                    className="w-32"
+                    className="w-24"
                   />
                 </Link>
               </li>
-              <li className="pb-5">
+              <li className="pb-4">
                 <Link href="/products/desserts">
                   <img
                     src="/icons/products/edited/dessert.png"
                     alt=""
-                    className="w-32"
+                    className="w-24"
                   />
                 </Link>
               </li>
-              <li className="pb-5">
+              <li className="pb-4">
                 <Link href="/products/drinks">
                   <img
                     src="/icons/products/edited/drinks.png"
                     alt=""
-                    className="w-32"
+                    className="w-24"
                   />
                 </Link>
               </li>
@@ -62,4 +62,4 @@ function NavBarProducts(props) {
   );
 }
 
-export default NavBarProducts;
+export default NavigationProducts;

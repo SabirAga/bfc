@@ -13,34 +13,58 @@ export const Footer = () => {
         <div>
           <div id="left">
             <div className="pb-20  ">
-              <div className="">
-                <h5 className="pb-4 text-xl font-bold">BFC</h5>
-                <div className="flex gap-40 text-gray-600">
-                  <ul className="">
-                    <li className="pb-4">
-                      <Link href="#">Products</Link>
-                    </li>
-                    <li className="pb-4">
-                      <Link href="#">Kids</Link>
-                    </li>
-                    <li className="pb-4">
-                      <Link href="#">Restaurants</Link>
-                    </li>
-                    <li className="pb-4">
-                      <Link href="#">Deals</Link>
-                    </li>
-                    <li className="pb-4">
-                      <Link href="#">Delivery</Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="pb-4">
-                      <Link href="#">Our history</Link>
-                    </li>
-                    <li className="pb-4">
-                      <Link href="#">Franchising</Link>
-                    </li>
-                  </ul>
+              <div className="flex gap-24">
+                <div className="">
+                  <h5 className="pb-4 text-xl font-bold">BFC</h5>
+                  <div className="flex gap-40 text-gray-600">
+                    <ul className="">
+                      <li className="pb-4">
+                        <Link href="#">Products</Link>
+                      </li>
+                      <li className="pb-4">
+                        <Link href="#">Kids</Link>
+                      </li>
+                      <li className="pb-4">
+                        <Link href="#">Restaurants</Link>
+                      </li>
+                      <li className="pb-4">
+                        <Link href="#">Deals</Link>
+                      </li>
+                      <li className="pb-4">
+                        <Link href="#">Delivery</Link>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li className="pb-4">
+                        <Link href="#">Our history</Link>
+                      </li>
+                      <li className="pb-4">
+                        <Link href="#">Franchising</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="">
+                  <h5 className="pb-4 text-xl font-bold">Delivery</h5>
+                  <div className="flex gap-40 text-gray-600">
+                    <ul className=" items-center gap-6">
+                      <li className="pb-4">
+                        <Link href="#">
+                          <Image src="/icons/delivery/deliveroo.svg" alt="" width={110} height={50}/>
+                        </Link>
+                      </li>
+                      <li className="pb-4">
+                        <Link href="#">
+                          <Image src="/icons/delivery/takeaway.svg" alt="" width={50} height={50}/>
+                        </Link>
+                      </li>
+                      <li className="pb-4">
+                        <Link href="#">
+                          <Image src="/icons/delivery/uberEats.svg" alt="" width={110} height={50}/>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

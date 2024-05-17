@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // import logoImg from "@/public/images/logoBFC.jpg";
-import logo from "@/public/images/logo.jpeg";
+
+import logo from "@/public/images/LogoBigger.jpg";
+
 
 import { DrawerComp } from "./ui/Drawer";
 import Link from "next/link";
@@ -39,8 +41,8 @@ export const MainHeader = () => {
               height={220}
               className={
                 shrunk
-                  ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-1 transition-all duration-300 border-0 rounded-3xl bg-transparent"
-                  : "pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl bg-transparent"
+                  ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-1 transition-all duration-300 relative z-50 border-0 rounded-3xl bg-transparent"
+                  : "pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl bg-transparent relative z-50"
               }
             />
           </Link>
