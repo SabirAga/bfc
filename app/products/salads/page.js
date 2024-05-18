@@ -5,7 +5,7 @@ import React from "react";
 function Salad(props) {
   return (
     <div className="px-[50px] pt-[68px]">
-     
+
     </div>
   );
 }

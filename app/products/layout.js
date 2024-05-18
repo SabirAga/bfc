@@ -7,7 +7,8 @@ const Layout = ({ children }) => (
   <div>
     <main>
       {children}
-      <div className="z-20 relative"> 
+      {/* fixed or ralative position of navigation  */}
+      <div className="z-20 fixed"> 
       <NavigationProducts />
       </div>
     </main>
@@ -15,3 +16,4 @@ const Layout = ({ children }) => (
 );
 
 export default Layout;
+

@@ -30,9 +30,9 @@ export const MainHeader = () => {
   }, []);
 
   return (
-    <div className="flex justify-between fixed  py-[9px] px-[50px] w-full z-10 bg-white">
+    <div className="flex justify-between fixed z-50 py-[9px] px-[50px] w-full  bg-white">
       <header className="flex items-center h-[50px]">
-        <div>
+        <div className="">
           <Link href="/">
             <Image
               // src={logoImg}
@@ -41,8 +41,8 @@ export const MainHeader = () => {
               height={220}
               className={
                 shrunk
-                  ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-1 transition-all duration-300 relative z-50 border-0 rounded-3xl bg-transparent"
-                  : "pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl bg-transparent relative z-50"
+                  ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-1 transition-all duration-300 border-0 rounded-3xl bg-transparent"
+                  : "pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl bg-transparent"
               }
             />
           </Link>
