@@ -2,69 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-
-const images = [
-  {
-    title: "10 Tenders",
-    src: "/images/products/singleItems/10tenders.jpeg",
-  },
-  {
-    title: "26 Hotwings",
-    src: "/images/products/singleItems/26hotwings.jpeg",
-  },
-  {
-    title: "Bucket Mix",
-    src: "/images/products/singleItems/bucketMix.jpeg",
-  },
-  {
-    title: "family Bucket",
-    src: "/images/products/singleItems/familyBucket.jpeg",
-  },
-  {
-    title: "duo bucket",
-    src: "/images/products/singleItems/duoBucket.jpeg",
-  },
-
-  {
-    title: "maxi Bucket",
-    src: "/images/products/singleItems/maxiBucket.jpeg",
-  },
-  {
-    title: "chicken Burger",
-    src: "/images/products/singleItems/chickenBurger.jpeg",
-  },
-  {
-    title: "maxi chicken",
-    src: "/images/products/singleItems/maxiChicken.jpeg",
-  },
-  {
-    title: "meat Burger",
-    src: "/images/products/singleItems/meatBurger.jpeg",
-  },
-  {
-    title: "maxi Meat",
-    src: "/images/products/singleItems/maxiMeat.jpeg",
-  },
-  {
-    title: "crunchy Burger",
-    src: "/images/products/singleItems/crunchyBurger.jpeg",
-  },
-  {
-    title: "fish Burger",
-    src: "/images/products/singleItems/fishBurger.jpeg",
-  },
-  {
-    title: "wrap",
-    src: "/images/products/singleItems/wrap.jpeg",
-  },
-  {
-    title: "sandwich",
-    src: "/images/products/singleItems/sandwich.jpeg",
-  },
-  
-
-];
-
+import React, { useRef } from "react";
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
@@ -78,20 +16,27 @@ function SamplePrevArrow(props) {
         transform: "scale(1.7)",
         marginLeft: "-20px",
         marginRight: "-20px",
+        backgroundColor: "black",
       }}
     />
   );
 }
 
-export const SlickCarousel = () => {
+export const SlickCarousel = ({ products }) => {
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
+
   const settings = {
     dots: false,
     // infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SamplePrevArrow />,
-    prevArrow: <SamplePrevArrow />,
     initialSlide: 0,
     responsive: [
       {
@@ -108,7 +53,7 @@ export const SlickCarousel = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
-          dots:true
+          dots: true,
         },
       },
       {
@@ -124,22 +69,45 @@ export const SlickCarousel = () => {
   return (
     <div className="w-4/5 m-auto ">
       <div className="">
-        <Slider {...settings} className="h-[300px] items-center">
-          {images.map((image) => (
-            <div key={image.title} className="flex text-center  justify-center">
+        <Slider
+          ref={(slider) => {
+            sliderRef = slider;
+          }}
+          {...settings}
+          className="h-[300px] items-center"
+        >
+          {products.map((product) => (
+            <div
+              key={product.title}
+              className="flex text-center  justify-center"
+            >
               <Image
-                src={image.src}
-                alt={image.title}
+                src={product.src}
+                alt={product.title}
                 height={300}
                 width={300}
                 className="px-2  mx-auto rounded-3xl h-[300px] w-[400px] "
               />
-              <p className="pt-2 uppercase text-2xl font-bold  text-white">
-                {image.title}
+              <p className="pt-2 uppercase text-2xl font-bold  text-black">
+                {product.title}
               </p>
             </div>
           ))}
         </Slider>
+        <div className="pt-20 flex gap-6 justify-center ">
+          <button
+            onClick={previous}
+            className="border-1 bg-gray-300 py-4 px-5 w-32 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white"
+          >
+            Previous
+          </button>
+          <button
+            onClick={next}
+            className="border-1 bg-gray-300 py-4 px-5 w-32 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white"
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );

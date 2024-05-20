@@ -44,7 +44,7 @@ export const BodyNews = () => {
                   <div className="flex ">
                     <Link
                       href="#"
-                      className="mt-3 py-4 px-10 mx-auto bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-black hover:text-white"
+                      className="mt-3 py-4 px-10 mx-auto bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white"
                     >
                       See more
                     </Link>
@@ -63,7 +63,7 @@ export const BodyNews = () => {
                   <div className="flex ">
                     <Link
                       href="#"
-                      className="mt-3 py-4 px-10 mx-auto bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-black hover:text-white"
+                      className="mt-3 py-4 px-10 mx-auto bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white"
                     >
                       See more
                     </Link>

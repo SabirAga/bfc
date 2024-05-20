@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import logo from "@/public/images/LogoBigger.jpg";
 
-
 import { DrawerComp } from "./ui/Drawer";
 import Link from "next/link";
 
@@ -75,7 +74,7 @@ export const MainHeader = () => {
       <select
         name="lang"
         id="lang"
-        className=" rounded-md mt-1 top-5 bg-transparent text-xl leading-5 font-bold h"
+        className=" rounded-md mt-1 top-5 bg-transparent text-xl leading-5 font-bold border-0 "
       >
         <option
           value="en"

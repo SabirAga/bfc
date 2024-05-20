@@ -23,8 +23,8 @@ const Specials = [
 function Burger() {
   return (
     <div className="px-[50px] pt-[68px]">
-      <div className="mt-28 absolute ">
-        <div className="pl-[350px] grid gap-y-8">
+      <div className="mt-24 pl-[100px] ">
+        <div className=" grid gap-y-8">
 
           <div className="grid place-items-center px-9 py-5">
             <h1 className="text-4xl pb-4">Chicken Burgers</h1>
