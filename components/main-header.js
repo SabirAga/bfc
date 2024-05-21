@@ -62,7 +62,7 @@ export const MainHeader = () => {
                 <Link href="/products/burgers">Products</Link>
               </li>
               <li>
-                <a href="#">Deals</a>
+                <Link href="/deals">Deals</Link>
               </li>
               <li>
                 <a href="#">Restaurants</a>

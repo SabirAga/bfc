@@ -105,7 +105,7 @@ export const SlickCarousel = ({ products }) => {
             onClick={next}
             className="border-1 bg-gray-300 py-4 px-5 w-32 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white"
           >
-            Next
+            Next 
           </button>
         </div>
       </div>

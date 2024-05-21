@@ -6,12 +6,19 @@ const Layout = ({ children }) => (
   <div>
     <main className="flex">
       <div className=" mx-auto flex-none">{children}</div>
-      {/* fixed or ralative position of navigation  */}
+
       <div className="z-20 absolute">
         <NavigationProducts />
       </div>
     </main>
+    <footer>
+      <Footer />
+    </footer>
   </div>
-); 
+);
 
 export default Layout;
+
+{
+  /* fixed or ralative position of navigation  */
+}

@@ -8,16 +8,16 @@ export const VideoComponent = () => {
   }, []);
 
   return (
-    <div className="h-[500px] mx-auto">
+    <div className="h-4/5 mx-auto rounded-2xl overflow-hidden">
       {isClient && (
-        <ReactPlayer
-          url="/images/heroVideo.mp4"
-          playing
-          width='100%'
-          height="100%"
-          muted
-          loop
-        />
+          <ReactPlayer
+            url="/images/videoHero.mp4"
+            playing
+            width="100%"
+            height="100%"
+            muted
+            loop
+          />
       )}
     </div>
   );
