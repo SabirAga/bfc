@@ -1,7 +1,5 @@
 "use client";
 
-import ModalComp from "@/components/ui/Modal";
-import { Modal } from "@mui/material";
 import React from "react";
 
 function Deals(props) {
@@ -9,7 +7,7 @@ function Deals(props) {
     <div className="px-[50px] pt-[68px]">
       <div className="mt-36 pl-[100px] ">
         <div>
-          <ModalComp />
+<h1>salam</h1>
         </div>
       </div>
     </div>
