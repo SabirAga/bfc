@@ -28,15 +28,6 @@ function NavigationProducts(props) {
                 </Link>
               </li>
               <li className="pb-4">
-                <Link href="/products/salads">
-                  <img
-                    src="/icons/products/edited/Salad.png"
-                    alt=""
-                    className="w-24 hover:scale-110 duration-300"
-                  />
-                </Link>
-              </li>
-              <li className="pb-4">
                 <Link href="/products/desserts">
                   <img
                     src="/icons/products/edited/dessert.png"

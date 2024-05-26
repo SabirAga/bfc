@@ -1,15 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
-import LunchDiningIcon from "@mui/icons-material/LunchDining";
-import NavBarProducts from "@/components/productsPageComponents/navBar";
-
 function Products() {
   return (
     <div className="px-[50px] pt-[68px]">
       <div className="mt-[55px] grid">
-        <main>
-        </main>
+        <main></main>
       </div>
     </div>
   );
@@ -17,8 +13,8 @@ function Products() {
 
 export default Products;
 
-
-          {/* <div className="px-[50px]">
+{
+  /* <div className="px-[50px]">
             <div>
               <div className="mt-20 bg-gray-300 w-fit rounded-xl">
                 <ul className="-pt-1 ">
@@ -70,4 +66,5 @@ export default Products;
                 </ul>
               </div>
             </div>
-          </div> */}
+          </div> */
+}
