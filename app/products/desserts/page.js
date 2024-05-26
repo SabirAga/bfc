@@ -39,17 +39,17 @@ function Dessert() {
   return (
     <div className="px-[50px] pt-[68px]">
       <div className="mt-24 pl-[100px] ">
-        <div className="min-h-screen">
-          <h1 className="text-4xl font-bold text-center text-black pb-4 py-5">
+        <div className="min-h-screen px-9 py-5">
+          <h1 className="text-4xl font-bold text-center text-black mb-8">
             Desserts
           </h1>
-          <div className="grid grid-cols-2 gap-7 justify-items-center ">
+          <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
             {products.map((product, index) => (
               <div
                 key={product.id}
-                className={`rounded-xl transition duration-300  ${
+                className={`rounded-xl transition duration-30 relative justify-items-center grid  ${
                   index === 2
-                    ? "col-start-1 col-span-2 justify-self-center"
+                    ? "col-start-1 col-span-2 justify-self-center relative justify-items-center grid"
                     : ""
                 }`}
                 onClick={() => openModal(product)}
@@ -61,7 +61,14 @@ function Dessert() {
                   className="rounded-xl shadow-2xl"
                   alt={product.title}
                 />
-                <h2 className="relative bottom-36 text-3xl text-center">{product.title}</h2>
+                <h2 className="relative bottom-36 text-3xl text-center">
+                  {product.title}
+                </h2>
+                <div className="flex justify-items-center absolute  bottom-12  mt-3 py-4 px-10 mx-auto">
+                    <button className="py-4 px-10 bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
+                      See more
+                    </button>
+                  </div>
               </div>
             ))}
           </div>

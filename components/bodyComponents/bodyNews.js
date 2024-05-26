@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import bodyImgNews from "@/public/images/placeholders/placeholderNews.jpg";
 import Link from "next/link";
+
+import bodyImgNews from "@/public/images/placeholders/placeholderNews.jpg";
+import newsBlack from '@/public/news/black.png'
+import newsYellow from '@/public/news/yellow.png'
+import newsRed from '@/public/news/red.png'
 
 export const BodyNews = () => {
   return (
@@ -15,11 +19,11 @@ export const BodyNews = () => {
             <div id="swiper" className=" flex gap-8 ">
               <div className="rounded-2xl bg-white shadow-2xl">
                 <Image
-                  src={bodyImgNews}
+                  src={newsBlack}
                   alt="placeholder"
-                  className="rounded-tl-2xl rounded-t-2xl"
+                  className="rounded-2xl"
                 />
-                <div className="px-[50px] py-10">
+                {/* <div className="px-[50px] py-10">
                   <h3 className="font-bold text-[25px] mb-[15px]">Some text</h3>
                   <p className="text-center mb-10">Some more text</p>
                   <div className="flex ">
@@ -30,15 +34,15 @@ export const BodyNews = () => {
                       See more
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="rounded-2xl bg-white shadow-2xl">
                 <Image
-                  src={bodyImgNews}
+                  src={newsYellow}
                   alt="placeholder"
-                  className="rounded-tl-2xl rounded-t-2xl"
+                  className=" rounded-2xl"
                 />
-                <div className="px-[50px] py-10">
+                {/* <div className="px-[50px] py-10">
                   <h3 className="font-bold text-[25px] mb-[15px]">Some text</h3>
                   <p className="text-center mb-10">Some more text</p>
                   <div className="flex ">
@@ -49,15 +53,15 @@ export const BodyNews = () => {
                       See more
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="rounded-2xl bg-white shadow-2xl">
                 <Image
-                  src={bodyImgNews}
+                  src={newsRed}
                   alt="placeholder"
-                  className="rounded-t-2xl"
+                  className="rounded-2xl"
                 />
-                <div className="px-[50px] py-10">
+                {/* <div className="px-[50px] py-10">
                   <h3 className="font-bold text-[25px] mb-[15px]">Some text</h3>
                   <p className="text-center mb-10">Some more text</p>
                   <div className="flex ">
@@ -68,7 +72,7 @@ export const BodyNews = () => {
                       See more
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

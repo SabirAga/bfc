@@ -4,7 +4,7 @@ import Image from "next/image";
 
 // import logoImg from "@/public/images/logoBFC.jpg";
 
-import logo from "@/public/images/LogoBigger.jpg";
+import logo from "@/public/images/logoNew.png";
 
 import { DrawerComp } from "./ui/Drawer";
 import Link from "next/link";
@@ -37,7 +37,7 @@ export const MainHeader = () => {
               // src={logoImg}
               src={logo}
               alt="logo"
-              height={220}
+              height={230}
               className={
                 shrunk
                   ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-1 transition-all duration-300 border-0 rounded-3xl bg-transparent"
@@ -57,7 +57,7 @@ export const MainHeader = () => {
             <DrawerComp />
           </div>
           <nav>
-            <ul className="flex text-black text-xl leading-5 font-bold gap-5 pt-4 pb-[6px]  font-CustomFont">
+            <ul className="flex text-black text-xl leading-5 font-bold gap-5 pt-4 pb-[6px] font-CustomFont">
               <li>
                 <Link href="/products/burgers">Products</Link>
               </li>

@@ -13,9 +13,9 @@ export const Footer = () => {
         <div>
           <div id="left">
             <div className="pb-20  ">
-              <div className="flex gap-24">
+              <div className="flex gap-32">
                 <div className="">
-                  <h5 className="pb-4 text-xl font-bold">BFC</h5>
+                  <h5 className="pb-4 text-2xl font-bold">BFC</h5>
                   <div className="flex gap-40 text-gray-600">
                     <ul className="">
                       <li className="pb-4">
@@ -45,7 +45,7 @@ export const Footer = () => {
                   </div>
                 </div>
                 <div className="">
-                  <h5 className="pb-4 text-xl font-bold">Delivery</h5>
+                  <h5 className="pb-4 text-2xl font-bold">Delivery</h5>
                   <div className="flex gap-40 text-gray-600">
                     <ul className=" items-center gap-6">
                       <li className="pb-4">
@@ -74,18 +74,18 @@ export const Footer = () => {
           <ul className="flex items-center space-x-6">
             <li>
               <Link href="#">
-                <Image src="/icons/tiktok-icon.svg" width={22} height={22} />
+                <Image src="/icons/tiktok-icon.svg" width={28} height={28} />
               </Link>
             </li>
             <li>
-              <div className="h-6 border-l border-gray-800"></div>
+              <div className="h-8 border-l border-gray-800"></div>
             </li>
             <li>
               <Link href="#">
                 <Image
                   src="/icons/black-instagram-icon.svg"
-                  width={24}
-                  height={24}
+                  width={30}
+                  height={30}
                 />
               </Link>
             </li>

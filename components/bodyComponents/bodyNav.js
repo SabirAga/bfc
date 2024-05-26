@@ -14,24 +14,24 @@ export const BodyNav = () => {
           href={"#"}
           className="border flex items-center justify-between rounded-2xl bg-white w-[300px] px-[40px] py-[25px] text-xl shadow-md hover:shadow-2xl hover:scale-105"
         >
-          <div className="flex items-center">
+          <Link href="/products/burgers" className="flex items-center">
             <LunchDiningIcon sx={{ fontSize: 35 }} />
             <p className="ml-[30px]">
               Explore <span className="font-bold">Products</span>
             </p>
-          </div>
+          </Link>
           <ArrowForwardIosIcon className="relative -right-5" />
         </Link>
         <Link
           href={"#"}
           className="border flex items-center justify-between rounded-2xl bg-white w-[300px] px-[40px] py-[25px] text-xl shadow-md hover:shadow-2xl hover:scale-105"
         >
-          <div className="flex items-center">
+          <Link href="/restaurants" className="flex items-center">
             <RestaurantIcon sx={{ fontSize: 35 }} />
             <p className="ml-[30px] max-w-[200px] ">
               Our <span className="font-bold">Restaurants</span>
             </p>
-          </div>
+          </Link>
           <ArrowForwardIosIcon className="relative -right-5" />
         </Link>
       </div>
