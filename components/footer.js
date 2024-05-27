@@ -19,22 +19,19 @@ export const Footer = () => {
                   <div className="flex gap-40 text-gray-600">
                     <ul className="">
                       <li className="pb-4">
-                        <Link href="#">Products</Link>
+                        <Link href="/products/burgers">Products</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">Kids</Link>
+                        <Link href="/deals">Deals</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">Restaurants</Link>
-                      </li>
-                      <li className="pb-4">
-                        <Link href="#">Deals</Link>
-                      </li>
-                      <li className="pb-4">
-                        <Link href="#">Delivery</Link>
+                        <Link href="#">Kids menu</Link>
                       </li>
                     </ul>
                     <ul>
+                      <li className="pb-4">
+                        <Link href="/restaurants">Restaurants</Link>
+                      </li>
                       <li className="pb-4">
                         <Link href="#">Our history</Link>
                       </li>
@@ -55,14 +52,15 @@ export const Footer = () => {
                       </li>
                       <li className="pb-4">
                         <Link href="#">
-                          <Image src="/icons/delivery/takeaway.svg" alt="" width={50} height={50}/>
+                          <Image src="/icons/delivery/uberEats.svg" alt="" width={110} height={50}/>
                         </Link>
                       </li>
                       <li className="pb-4">
                         <Link href="#">
-                          <Image src="/icons/delivery/uberEats.svg" alt="" width={110} height={50}/>
+                          <Image src="/icons/delivery/takeaway.svg" alt="" width={140} height={50}/>
                         </Link>
                       </li>
+                     
                     </ul>
                   </div>
                 </div>
@@ -74,7 +72,7 @@ export const Footer = () => {
           <ul className="flex items-center space-x-6">
             <li>
               <Link href="#">
-                <Image src="/icons/tiktok-icon.svg" width={28} height={28} />
+                <Image src="/icons/tiktok-icon.svg" width={28} height={28} alt="tiktok"/>
               </Link>
             </li>
             <li>
@@ -86,6 +84,7 @@ export const Footer = () => {
                   src="/icons/black-instagram-icon.svg"
                   width={30}
                   height={30}
+                  alt="instagram"
                 />
               </Link>
             </li>

@@ -1,9 +1,10 @@
 import bodyImg from "@/public/images/placeholders/bodyImg.jpg";
 import Image from "next/image";
 
-import soHot from "@/public/images/photos/soHot.jpeg";
-import menu from "@/public/images/photos/menu.jpeg";
-import crunchy from "@/public/images/photos/crunchy.jpeg";
+import soHot from "@/public/images/photos/soHot.png";
+import crunchy from "@/public/images/photos/crunchy.png";
+import menu from "@/public/images/photos/menu.png";
+
 
 export const BodyPhotos = () => {
   return (

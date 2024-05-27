@@ -22,7 +22,7 @@ const products = [
   },
 ];
 
-function Dessert() {
+function Desserts() {
   const [currentProduct, setCurrentProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -85,7 +85,7 @@ function Dessert() {
   );
 }
 
-export default Dessert;
+export default Desserts;
 
 // import React, { useState } from "react";
 // import Image from "next/image";

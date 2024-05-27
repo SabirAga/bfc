@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-
-function NavigationProducts(props) {
+function NavigationDeals(props) {
   const [shrunk, setShrunk] = useState(false);
 
   useEffect(() => {
@@ -37,42 +36,22 @@ function NavigationProducts(props) {
           >
             <ul className="-pt-1 ">
               <li className="pb-4">
-                <Link href="/products/burgers">
+                <Link href="/deals">
                   <img
-                    src="/icons/products/edited/burger.png"
+                    src="/icons/deals/meals.png"
                     alt=""
-                    className="w-24 hover:scale-110 duration-300"
+                    className="w-28 hover:scale-110 duration-300"
                     // width={24} height={24}
                   />
                 </Link>
               </li>
               <li className="pb-4">
-                <Link href="/products/buckets">
+                <Link href="/deals/menus">
                   <img
-                    src="/icons/products/edited/bucket.png"
+                    src="/icons/deals/menus.png"
                     alt=""
-                    className="w-24 hover:scale-110 duration-300"
+                    className="w-28 hover:scale-110 duration-300"
                     // width={24} height={24}
-                  />
-                </Link>
-              </li>
-              <li className="pb-4">
-                <Link href="/products/desserts">
-                  <img
-                    src="/icons/products/edited/dessert.png"
-                    alt=""
-                    className="w-24 hover:scale-110 duration-300"
-                    // width={24} height={24}
-                  />
-                </Link>
-              </li>
-              <li className="pb-4">
-                <Link href="/products/drinks">
-                  <img
-                    src="/icons/products/edited/drinks.png"
-                    alt=""
-                    className="w-24 hover:scale-110 duration-300"
-                    // width={24} height={24} quality={100}
                   />
                 </Link>
               </li>
@@ -84,4 +63,4 @@ function NavigationProducts(props) {
   );
 }
 
-export default NavigationProducts;
+export default NavigationDeals;

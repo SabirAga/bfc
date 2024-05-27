@@ -98,7 +98,7 @@ export const DrawerComp = () => {
         <ul className="flex items-center space-x-6">
           <li onClick={handleClose}>
             <Link href="#">
-              <Image src="/icons/tiktok-icon.svg" width={28} height={28} />
+              <Image src="/icons/tiktok-icon.svg" width={28} height={28} alt="tiktok"/>
             </Link>
           </li>
           <li>
@@ -110,6 +110,7 @@ export const DrawerComp = () => {
                 src="/icons/black-instagram-icon.svg"
                 width={30}
                 height={30}
+                alt="instagram"
               />
             </Link>
           </li>

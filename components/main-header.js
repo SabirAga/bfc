@@ -40,7 +40,7 @@ export const MainHeader = () => {
               height={230}
               className={
                 shrunk
-                  ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-1 transition-all duration-300 border-0 rounded-3xl bg-transparent"
+                  ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-2 transition-all duration-300 border-0 rounded-3xl bg-transparent"
                   : "pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl bg-transparent"
               }
             />
@@ -65,7 +65,7 @@ export const MainHeader = () => {
                 <Link href="/deals">Deals</Link>
               </li>
               <li>
-                <a href="#">Restaurants</a>
+                <Link href="/restaurants">Restaurants</Link>
               </li>
             </ul>
           </nav>
