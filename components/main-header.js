@@ -1,16 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-
-// import logoImg from "@/public/images/logoBFC.jpg";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 import logo from "@/public/images/logoNew.png";
-
 import { DrawerComp } from "./ui/Drawer";
-import Link from "next/link";
+import LanguageChanger from "./ui/languageChanger";
 
 export const MainHeader = () => {
   const [shrunk, setShrunk] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,42 +59,19 @@ export const MainHeader = () => {
           <nav>
             <ul className="flex text-black text-xl leading-5 font-bold gap-5 pt-4 pb-[6px] font-CustomFont">
               <li>
-                <Link href="/products/burgers">Products</Link>
+                <Link href="/products/burgers">{t("products")}</Link>
               </li>
               <li>
-                <Link href="/deals">Deals</Link>
+                <Link href="/deals">{t("deals")}</Link>
               </li>
               <li>
-                <Link href="/restaurants">Restaurants</Link>
+                <Link href="/restaurants">{t("restaurants")}</Link>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      <select
-        name="lang"
-        id="lang"
-        className=" rounded-md mt-1 top-5 bg-transparent text-xl leading-5 font-bold border-0 "
-      >
-        <option
-          value="en"
-          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-        >
-          EN
-        </option>
-        <option
-          value="fr"
-          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-        >
-          FR
-        </option>
-        <option
-          value="nl"
-          className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-        >
-          NL
-        </option>
-      </select>
+      <LanguageChanger />
     </div>
   );
 };

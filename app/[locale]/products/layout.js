@@ -1,4 +1,3 @@
-import { Footer } from "@/components/footer";
 import NavigationProducts from "@/components/productsPageComponents/navigation";
 
 // components/Layout.js
@@ -11,9 +10,6 @@ const Layout = ({ children }) => (
         <NavigationProducts />
       </div>
     </main>
-    <footer>
-      <Footer />
-    </footer>
   </div>
 );
 

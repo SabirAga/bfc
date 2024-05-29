@@ -1,12 +1,13 @@
+"use client";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import Image from "next/image";
 import Link from "next/link";
 
-// import tiktok from '@/public/icons/tiktok-icon.svg';
-// import instagram from "@/public/icons/black-instagram-icon.svg";
-
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="mt-[75px]  mx-[50px] border-t-2 border-[#cccccc] pt-[50px] ">
       <div className="px-[50px]  font-bold">
@@ -19,48 +20,62 @@ export const Footer = () => {
                   <div className="flex gap-40 text-gray-600">
                     <ul className="">
                       <li className="pb-4">
-                        <Link href="/products/burgers">Products</Link>
+                        <Link href="/products/burgers">{t("products")}</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="/deals">Deals</Link>
+                        <Link href="/deals">{t("deals")}</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">Kids menu</Link>
+                        <Link href="#">{t("kids")}</Link>
                       </li>
                     </ul>
                     <ul>
                       <li className="pb-4">
-                        <Link href="/restaurants">Restaurants</Link>
+                        <Link href="/restaurants">{t("restaurants")}</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">Our history</Link>
+                        <Link href="#">{t("our_history")}</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">Franchising</Link>
+                        <Link href="#">{t("franchising")}</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="">
-                  <h5 className="pb-4 text-2xl font-bold">Delivery</h5>
+                  <h5 className="pb-4 text-2xl font-bold">{t("delivery")}</h5>
                   <div className="flex gap-40 text-gray-600">
                     <ul className=" items-center gap-6">
                       <li className="pb-4">
                         <Link href="#">
-                          <Image src="/icons/delivery/deliveroo.svg" alt="" width={110} height={50}/>
+                          <Image
+                            src="/icons/delivery/deliveroo.svg"
+                            alt=""
+                            width={110}
+                            height={50}
+                          />
                         </Link>
                       </li>
                       <li className="pb-4">
                         <Link href="#">
-                          <Image src="/icons/delivery/uberEats.svg" alt="" width={110} height={50}/>
+                          <Image
+                            src="/icons/delivery/uberEats.svg"
+                            alt=""
+                            width={110}
+                            height={50}
+                          />
                         </Link>
                       </li>
                       <li className="pb-4">
                         <Link href="#">
-                          <Image src="/icons/delivery/takeaway.svg" alt="" width={140} height={50}/>
+                          <Image
+                            src="/icons/delivery/takeaway.svg"
+                            alt=""
+                            width={140}
+                            height={50}
+                          />
                         </Link>
                       </li>
-                     
                     </ul>
                   </div>
                 </div>
@@ -72,7 +87,12 @@ export const Footer = () => {
           <ul className="flex items-center space-x-6">
             <li>
               <Link href="#">
-                <Image src="/icons/tiktok-icon.svg" width={28} height={28} alt="tiktok"/>
+                <Image
+                  src="/icons/tiktok-icon.svg"
+                  width={28}
+                  height={28}
+                  alt="tiktok"
+                />
               </Link>
             </li>
             <li>

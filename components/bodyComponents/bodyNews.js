@@ -3,15 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 import bodyImgNews from "@/public/images/placeholders/placeholderNews.jpg";
-import newsBlack from '@/public//images/news/black.png'
-import newsYellow from '@/public/images/news/yellow.png'
-import newsRed from '@/public/images/news/red.png'
+import newsBlack from "@/public//images/news/black.png";
+import newsYellow from "@/public/images/news/yellow.png";
+import newsRed from "@/public/images/news/red.png";
+import { useTranslation } from "react-i18next";
 
 export const BodyNews = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <h1 className="text-[54px] text-center px-3 font-bold font-cooperBlack mb-5 ">
-      What&apos;s new?!
+      {t("main:whats_new")}
       </h1>
       <div className="">
         <div className="p-[50px]  bg-[#f8f4f4] rounded-lg">

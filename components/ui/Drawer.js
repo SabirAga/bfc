@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 import { Drawer, Box, Typography, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -14,13 +17,12 @@ import LunchDiningIcon from "@mui/icons-material/LunchDining";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 
-import Image from "next/image";
-import Link from "next/link";
-
 import logoImg from "@/public/images/logoBFC.jpg";
 
 export const DrawerComp = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const { t } = useTranslation();
 
   const handleClose = () => {
     setDrawerOpen(false);
@@ -45,7 +47,7 @@ export const DrawerComp = () => {
                   <Typography
                     style={{ fontSize: "30px", fontFamily: "cooper" }}
                   >
-                    <div className="font-cooper">Products</div>
+                    <div className="font-cooper">{t("products")}</div>
                   </Typography>
                 }
               />
@@ -65,7 +67,7 @@ export const DrawerComp = () => {
                   <Typography
                     style={{ fontSize: "30px", fontFamily: "cooper" }}
                   >
-                    <div className="font-cooper ">Deals</div>
+                    <div className="font-cooper ">{t("deals")}</div>
                   </Typography>
                 }
               />
@@ -83,7 +85,7 @@ export const DrawerComp = () => {
               <ListItemText
                 primary={
                   <Typography style={{ fontSize: "30px", fontFamily: "arvo" }}>
-                    <div className="font-cooper ">Restaurants</div>
+                    <div className="font-cooper ">{t("restaurants")}</div>
                   </Typography>
                 }
               />
@@ -98,7 +100,12 @@ export const DrawerComp = () => {
         <ul className="flex items-center space-x-6">
           <li onClick={handleClose}>
             <Link href="#">
-              <Image src="/icons/tiktok-icon.svg" width={28} height={28} alt="tiktok"/>
+              <Image
+                src="/icons/tiktok-icon.svg"
+                width={28}
+                height={28}
+                alt="tiktok"
+              />
             </Link>
           </li>
           <li>

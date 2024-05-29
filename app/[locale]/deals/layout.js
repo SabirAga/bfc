@@ -1,5 +1,4 @@
 import NavigationDeals from "@/components/dealsPageComponents/navigationDeals";
-import { Footer } from "@/components/footer";
 
 // components/Layout.js
 const Layout = ({ children }) => (
@@ -10,9 +9,7 @@ const Layout = ({ children }) => (
         <NavigationDeals />
       </div>
     </main>
-    <footer>
-      <Footer />
-    </footer>
+
   </div>
 );
 

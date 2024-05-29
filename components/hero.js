@@ -2,8 +2,7 @@
 
 import React from "react";
 import { VideoComponent } from "./videoComponent";
-import image from "/Users/sabiraga/Desktop/projects/BFC/bfc/public/images/placeholders/hero.jpg";
-import Image from "next/image";
+
 
 export const Hero = () => {
   return (
