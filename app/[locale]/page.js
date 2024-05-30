@@ -2,7 +2,7 @@ import { Body } from "@/components/body";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import initTranslations from "../i18n";
-import TranslationsProvider from "@/components/ui/TranslationProvider";
+import TranslationsProvider from "@/components/ui/translationProvider";
 
 const namespaces = ["common", "main"];
 

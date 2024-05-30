@@ -2,7 +2,7 @@ import { Footer } from "@/components/footer";
 import "./globals.css";
 import { MainHeader } from "@/components/main-header";
 import initTranslations from "../i18n";
-import TranslationsProvider from "@/components/ui/TranslationProvider";
+import TranslationsProvider from "@/components/ui/translationProvider";
 
 const namespaces = ["common", "main"];
 
@@ -25,7 +25,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           <head>
             <link rel="stylesheet" href="https://use.typekit.net/iep4nms.css" />
           </head>
-          <body className="font-cooper">
+          <body className="font-cooper max-w-[540px] md:max-w-[1280px] xl:max-w-[1830px] mx-auto ">
             <MainHeader />
             {children}
             <footer>

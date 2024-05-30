@@ -1,11 +1,8 @@
 "use client";
 
-import NavigationProducts from "@/components/productsPageComponents/navigation";
-import { SlickCarousel } from "@/components/ui/carouselComponent";
 import React, { useState } from "react";
 import ReactModal from "@/components/ui/ReactModal";
-
-import Image from "next/image";
+import { CardComponentDouble } from "@/components/ui/cardComponent";
 
 const products = [
   {
@@ -55,27 +52,7 @@ function Drinks(props) {
           <h1 className="text-4xl mb-8">Drinks</h1>
           <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
             {products.map((product, index) => (
-              <div
-                key={product.id}
-                className="rounded-xl transition duration-300 grid justify-items-center relative"
-                onClick={() => openModal(product)}
-              >
-                <Image
-                  src={product.src}
-                  width={450}
-                  height={450}
-                  className="rounded-xl shadow-2xl"
-                  alt={product.title}
-                />
-                <h2 className="relative bottom-36 text-3xl text-center">
-                  {product.title}
-                </h2>
-                <div className="flex justify-items-center absolute  bottom-12  mt-3 py-4 px-10 mx-auto">
-                  <button className="py-4 px-10 bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
-                    See more
-                  </button>
-                </div>
-              </div>
+              <CardComponentDouble product={product} openModal={openModal} />
             ))}
           </div>
           {isModalOpen && currentProduct && (

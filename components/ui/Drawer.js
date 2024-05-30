@@ -18,6 +18,7 @@ import FastfoodIcon from "@mui/icons-material/Fastfood";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 
 import logoImg from "@/public/images/logoBFC.jpg";
+import LanguageChanger from "./languageChanger";
 
 export const DrawerComp = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -30,10 +31,14 @@ export const DrawerComp = () => {
 
   const DrawerList = (
     <Box
-      sx={{ width: 450, paddingTop: 11 }}
-      role="presentation"
-      justifyContent="center"
-      display="grid"
+      sx={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center", // This centers the content horizontally
+        justifyContent: "center", // This centers the content vertically (optional)
+        height: "100%", //tically centers the content (optional)
+      }}
     >
       <List sx={{ fontFamily: "cooper" }}>
         <Link href="/products/burgers" className=" hover:text-red-500 ">
@@ -121,6 +126,9 @@ export const DrawerComp = () => {
               />
             </Link>
           </li>
+          <li className="pl-[40px]">
+            <LanguageChanger />
+          </li>
         </ul>
       </div>
     </Box>
@@ -141,6 +149,11 @@ export const DrawerComp = () => {
         anchor="left"
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
+        sx={{
+          "& .MuiDrawer-paper": {
+            width: { xs: "100%", sm: "450px" }, // Full width on xs, 450px on sm and up
+          },
+        }}
       >
         <div className="flex justify-center items-center pt-6">
           <Image
@@ -152,6 +165,7 @@ export const DrawerComp = () => {
           />
         </div>
         {DrawerList}
+        <div abc></div>
       </Drawer>
     </>
   );

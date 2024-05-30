@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import ReactModal from "@/components/ui/ReactModal";
+import { CardComponentTriple } from "@/components/ui/cardComponent";
 
 const products = [
   {
@@ -45,31 +45,11 @@ function Desserts() {
           </h1>
           <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
             {products.map((product, index) => (
-              <div
-                key={product.id}
-                className={`rounded-xl transition duration-30 relative justify-items-center grid  ${
-                  index === 2
-                    ? "col-start-1 col-span-2 justify-self-center relative justify-items-center grid"
-                    : ""
-                }`}
-                onClick={() => openModal(product)}
-              >
-                <Image
-                  src={product.src}
-                  width={450}
-                  height={450}
-                  className="rounded-xl shadow-2xl"
-                  alt={product.title}
-                />
-                <h2 className="relative bottom-36 text-3xl text-center">
-                  {product.title}
-                </h2>
-                <div className="flex justify-items-center absolute  bottom-12  mt-3 py-4 px-10 mx-auto">
-                    <button className="py-4 px-10 bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
-                      See more
-                    </button>
-                  </div>
-              </div>
+               <CardComponentTriple
+               product={product}
+               index={index}
+               openModal={openModal}
+             />
             ))}
           </div>
           {isModalOpen && currentProduct && (

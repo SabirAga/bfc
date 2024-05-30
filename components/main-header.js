@@ -28,8 +28,12 @@ export const MainHeader = () => {
     };
   }, []);
 
+  const classesShrunkLg =
+    "-translate-x-7 flex items-center transition-all duration-300";
+  const classesLg = "flex items-center transition-all duration-300";
+
   return (
-    <div className="flex justify-between fixed z-50 py-[9px] px-[50px] w-full  bg-white">
+    <div className="flex justify-between fixed z-50 py-[9px] px-[10px] md:px-[50px] w-full  bg-white max-w-[540px] md:max-w-[1280px] xl:max-w-[1830px]">
       <header className="flex items-center h-[50px]">
         <div className="">
           <Link href="/">
@@ -40,24 +44,22 @@ export const MainHeader = () => {
               height={230}
               className={
                 shrunk
-                  ? "scale-75 pl-[50px] mt-20 -translate-y-1 -translate-x-2 transition-all duration-300 border-0 rounded-3xl bg-transparent"
-                  : "pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl bg-transparent"
+                  ? "scale-60 pl-[10px] md:scale-75 md:pl-[50px] mt-20 -translate-y-1 -translate-x-2 transition-all duration-300 border-0 rounded-3xl bg-transparent"
+                  : "scale-75 pl-[10px] md:scale-100 md:pl-[50px] mt-28 transition-all duration-300 border-0 rounded-3xl bg-transparent"
               }
             />
           </Link>
         </div>
         <div
-          className={
-            shrunk
-              ? "-translate-x-7 flex items-center transition-all duration-300"
-              : "flex items-center transition-all duration-300"
-          }
+          className={`flex items-center transition-all duration-300 ${
+            shrunk ? "md:-translate-x-7" : ""
+          }`}
         >
-          <div className="ml-[14px] p-[10px] pt-[20px] mr-[2px] ">
+          <div className="lg:ml-[14px] lg:p-[10px] lg:pt-[20px] lg:mr-[2px] lg:static absolute md:right-10 right-1">
             <DrawerComp />
           </div>
           <nav>
-            <ul className="flex text-black text-xl leading-5 font-bold gap-5 pt-4 pb-[6px] font-CustomFont">
+            <ul className="hidden lg:flex text-black text-xl leading-5 font-bold gap-5 pt-4 pb-[6px] font-CustomFont ">
               <li>
                 <Link href="/products/burgers">{t("products")}</Link>
               </li>
@@ -71,7 +73,9 @@ export const MainHeader = () => {
           </nav>
         </div>
       </header>
-      <LanguageChanger />
+      <div className="hidden lg:block">
+        <LanguageChanger />
+      </div>
     </div>
   );
 };

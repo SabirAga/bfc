@@ -9,12 +9,12 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="mt-[75px]  mx-[50px] border-t-2 border-[#cccccc] pt-[50px] ">
+    <footer id="footer" className="mt-[75px]  mx-[50px] border-t-2 border-[#cccccc] pt-[50px] ">
       <div className="px-[50px]  font-bold">
-        <div>
+        <div >
           <div id="left">
             <div className="pb-20  ">
-              <div className="flex gap-32">
+              <div className="grid gap-10 md:flex md:gap-32">
                 <div className="">
                   <h5 className="pb-4 text-2xl font-bold">BFC</h5>
                   <div className="flex gap-40 text-gray-600">
@@ -26,7 +26,7 @@ export const Footer = () => {
                         <Link href="/deals">{t("deals")}</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">{t("kids")}</Link>
+                        <Link href="/products/kids">{t("kids")}</Link>
                       </li>
                     </ul>
                     <ul>
@@ -34,10 +34,10 @@ export const Footer = () => {
                         <Link href="/restaurants">{t("restaurants")}</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">{t("our_history")}</Link>
+                        <Link href="/our-story">{t("our_history")}</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">{t("franchising")}</Link>
+                        <Link href="/franchising">{t("franchising")}</Link>
                       </li>
                     </ul>
                   </div>
@@ -114,13 +114,13 @@ export const Footer = () => {
       <div id="bottom" className="mt-[35px] py-10 border-t-2 border-[#cccccc]">
         <ul className="flex px-[50px] space-x-6">
           <li>
-            <Link href="#">Privacy Policy</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
           </li>
           <li>
             <div className="h-6 border-l border-gray-800"></div>
           </li>
           <li>
-            <Link href="#">Terms of use</Link>
+            <Link href="/terms-of-use">Terms of use</Link>
           </li>
         </ul>
       </div>

@@ -1,8 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import ReactModal from "@/components/ui/ReactModal";
+import {
+  CardComponentDouble,
+  CardComponentTriple,
+} from "@/components/ui/cardComponent";
+import NavigationProducts from "@/components/productsPageComponents/navigation";
 
 const chickenBurgers = [
   {
@@ -63,119 +67,58 @@ function Burger() {
   return (
     <div className="px-[50px] pt-[68px]">
       <div className="mt-24 pl-[100px] ">
-          <div className="grid place-items-center px-9 py-5">
-            <h1 className="text-4xl mb-8">Chicken Burgers</h1>
-            <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
-              {chickenBurgers.map((product, index) => (
-                <div
-                  key={product.id}
-                  className="rounded-xl transition duration-300 grid justify-items-center relative" 
-                  onClick={() => openModal(product)}
-                >
-                  <Image
-                    src={product.src}
-                    width={450}
-                    height={450}
-                    className="rounded-xl shadow-2xl"
-                    alt={product.title}
-                  />
-                  <h2 className="relative bottom-36 text-3xl text-center">
-                    {product.title}
-                  </h2>
-                  <div className="flex justify-items-center absolute  bottom-12  mt-3 py-4 px-10 mx-auto">
-                    <button className="py-4 px-10 bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
-                      See more
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-            {isModalOpen && currentProduct && (
-              <ReactModal
-                product={currentProduct}
-                modalOpen={isModalOpen}
-                modalClose={closeModal}
-              />
-            )}
+        <div className="grid place-items-center px-9 py-5">
+          <h1 className="text-4xl mb-8">Chicken Burgers</h1>
+          <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
+            {chickenBurgers.map((product, index) => (
+              <CardComponentDouble product={product} openModal={openModal} />
+            ))}
           </div>
-          <div className="grid place-items-center px-9 py-5">
-            <h1 className="text-4xl mb-8">Meat Burgers</h1>
-            <div className="grid grid-cols-2 gap-7 justify-items-center ">
-              {meatBurgers.map((product, index) => (
-                <div
-                  key={product.id}
-                  className="rounded-xl transition duration-300 grid justify-items-center relative" 
-                  onClick={() => openModal(product)}
-                >
-                  <Image
-                    src={product.src}
-                    width={450}
-                    height={450}
-                    className="rounded-xl shadow-2xl"
-                    alt={product.title}
-                  />
-                  <h2 className="relative bottom-36 text-3xl text-center">
-                    {product.title}
-                  </h2>
-                  <div className="flex justify-items-center absolute bottom-12  mt-3 py-4 px-10 mx-auto">
-                    <button className="py-4 px-10 bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
-                      See more
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-            {isModalOpen && currentProduct && (
-              <ReactModal
-                product={currentProduct}
-                modalOpen={isModalOpen}
-                modalClose={closeModal}
-              />
-            )}
+          {isModalOpen && currentProduct && (
+            <ReactModal
+              product={currentProduct}
+              modalOpen={isModalOpen}
+              modalClose={closeModal}
+            />
+          )}
+        </div>
+        <div className="grid place-items-center px-9 py-5">
+          <h1 className="text-4xl mb-8">Meat Burgers</h1>
+          <div className="grid grid-cols-2 gap-7 justify-items-center ">
+            {meatBurgers.map((product, index) => (
+              <CardComponentDouble product={product} openModal={openModal} />
+            ))}
           </div>
-          <div className="grid place-items-center px-9 py-5">
-            <h1 className="text-4xl mb-8">Specials</h1>
+          {isModalOpen && currentProduct && (
+            <ReactModal
+              product={currentProduct}
+              modalOpen={isModalOpen}
+              modalClose={closeModal}
+            />
+          )}
+        </div>
+        <div className="grid place-items-center px-9 py-5">
+          <h1 className="text-4xl mb-8">Specials</h1>
 
-            <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
-              {specials.map((product, index) => (
-                <div
-                  key={product.id}
-                  className={`rounded-xl transition duration-30 relative justify-items-center grid  ${
-                    index === 2
-                      ? "col-start-1 col-span-2 justify-self-center relative justify-items-center grid"
-                      : ""
-                  }`}
-                  onClick={() => openModal(product)}
-                >
-                  <Image
-                    src={product.src}
-                    width={450}
-                    height={450}
-                    className="rounded-xl shadow-2xl"
-                    alt={product.title}
-                  />
-                  <h2 className="relative bottom-36 text-3xl text-center">
-                    {product.title}
-                  </h2>
-                  <div className="flex justify-items-center absolute  bottom-12  mt-3 py-4 px-10 mx-auto">
-                    <button className="py-4 px-10 bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
-                      See more
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-            {isModalOpen && currentProduct && (
-              <ReactModal
-                product={currentProduct}
-                modalOpen={isModalOpen}
-                modalClose={closeModal}
+          <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
+            {specials.map((product, index) => (
+              <CardComponentTriple
+                product={product}
+                index={index}
+                openModal={openModal}
               />
-            )}
+            ))}
           </div>
+          {isModalOpen && currentProduct && (
+            <ReactModal
+              product={currentProduct}
+              modalOpen={isModalOpen}
+              modalClose={closeModal}
+            />
+          )}
         </div>
       </div>
-
+    </div>
   );
 }
 

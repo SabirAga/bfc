@@ -76,38 +76,9 @@ export const SlickCarousel = ({ products }) => {
           {...settings}
           className="h-[300px] items-center"
         >
-          {products.map((product) => (
-            <div
-              key={product.title}
-              className="flex text-center  justify-center"
-            >
-              <Image
-                src={product.src}
-                alt={product.title}
-                height={300}
-                width={300}
-                className="px-2  mx-auto rounded-3xl h-[300px] w-[400px] "
-              />
-              <p className="pt-2 uppercase text-2xl font-bold  text-black">
-                {product.title}
-              </p>
-            </div>
-          ))}
+          
         </Slider>
-        <div className="pt-20 flex gap-6 justify-center ">
-          <button
-            onClick={previous}
-            className="border-1 bg-gray-300 py-4 px-5 w-32 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white"
-          >
-            Previous
-          </button>
-          <button
-            onClick={next}
-            className="border-1 bg-gray-300 py-4 px-5 w-32 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white"
-          >
-            Next 
-          </button>
-        </div>
+      
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export const VideoComponent = () => {
   }, []);
 
   return (
-    <div className="h-4/5 mx-auto rounded-2xl overflow-hidden">
+    <div className="md:h-4/5 mx-auto rounded-2xl overflow-hidden mt-16 md:mt-0 ">
       {isClient && (
           <ReactPlayer
             url="/images/videoHero.mp4"

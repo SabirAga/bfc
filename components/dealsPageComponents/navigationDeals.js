@@ -30,8 +30,8 @@ function NavigationDeals(props) {
           <div
             className={
               shrunk
-                ? "scale-90 mt-52 bg-gray-100 w-fit rounded-xl  transition-all duration-300 "
-                : "mt-52 bg-gray-100 w-fit rounded-xl  transition-all duration-300"
+                ? "scale-90 mt-44 bg-gray-100 w-fit rounded-xl  transition-all duration-300 fixed"
+                : "mt-44 bg-gray-100 w-fit rounded-xl  transition-all duration-300 fixed"
             }
           >
             <ul className="-pt-1 ">

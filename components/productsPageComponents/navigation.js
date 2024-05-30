@@ -7,6 +7,7 @@ import Image from "next/image";
 
 function NavigationProducts(props) {
   const [shrunk, setShrunk] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,14 +26,14 @@ function NavigationProducts(props) {
   }, []);
   // className = "mt-52 bg-gray-100 w-fit rounded-xl px-";
   return (
-    <div className="px-[50px]">
+    <div className="px-[50px] ">
       <div className="px-[50px]">
         <div>
           <div
             className={
               shrunk
-                ? "scale-90 mt-52 bg-gray-100 w-fit rounded-xl  transition-all duration-300 "
-                : "mt-52 bg-gray-100 w-fit rounded-xl  transition-all duration-300"
+                ? "scale-90 mt-44 bg-gray-100 w-fit rounded-xl  transition-all duration-300 fixed"
+                : "mt-44 bg-gray-100 w-fit rounded-xl  transition-all duration-300 fixed"
             }
           >
             <ul className="-pt-1 ">
