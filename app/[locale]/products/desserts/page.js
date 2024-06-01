@@ -3,26 +3,34 @@
 import React, { useState } from "react";
 import ReactModal from "@/components/ui/ReactModal";
 import { CardComponentTriple } from "@/components/ui/cardComponent";
+import { useTranslation } from "react-i18next";
 
-const products = [
+
+const products =(t)=> [
   {
     id: 1,
     title: "Chocolate Fudge Brownie",
     src: "/images/products/singleItems/desserts/37.png",
+    description: t("products:chocolate_fudge_brownie"),
+    
   },
   {
     id: 2,
     title: "Cookie Dough",
     src: "/images/products/singleItems/desserts/38.png",
+    description: t("products:cookie_dough"),
   },
   {
     id: 3,
     title: "Strawberry Cheesecake",
     src: "/images/products/singleItems/desserts/39.png",
+    description: t("products:strawberry_cheesecake"),
   },
 ];
 
 function Desserts() {
+  const { t } = useTranslation();
+
   const [currentProduct, setCurrentProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -44,7 +52,7 @@ function Desserts() {
             Desserts
           </h1>
           <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
-            {products.map((product, index) => (
+            {products(t).map((product, index) => (
                <CardComponentTriple
                product={product}
                index={index}

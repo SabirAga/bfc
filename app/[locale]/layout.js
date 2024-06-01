@@ -4,7 +4,7 @@ import { MainHeader } from "@/components/main-header";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/ui/translationProvider";
 
-const namespaces = ["common", "main"];
+const namespaces = ["common", "main", "products", "deals"];
 
 export const metadata = {
   title: "BFC",

@@ -9,7 +9,7 @@ const customStyles = {
     left: "50%",
     right: "auto",
     bottom: "auto",
-    marginRight: "-50%",
+    marginRight: "-30%",
     transform: "translate(-50%, -50%)",
     overflow: "visible",
     border: "none",
@@ -26,7 +26,7 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
   let subtitle;
 
   return (
-    <div className="overflow-visible">
+    <div className="overflow-visible ">
       {/* <button onClick={modalOpen}>Open Modal</button> */}
       <Modal
         isOpen={modalOpen}
@@ -44,10 +44,12 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
               className="rounded-l-xl shadow-2xl"
               alt="product"
             />
-            <h2 className="absolute text-2xl bottom-36">{product.title}</h2>
+            <h2 className="absolute text-3xl bottom-28">{product.title}</h2>
           </li>
-          <div className="w-1/2 flex items-center justify-center p-4 text-center bg-slate-100 rounded-xl">
-            <h2 className="text-2xl font-bold">Description</h2>
+          <div className="w-2/3  flex items-center justify-center p-4 text-center bg-slate-100 rounded-xl">
+            <div className="lg:w-[500px] md:max-w-[400px] w-[350px] overflow-auto">
+              <h2 className="text-2xl font-bold ">{product.description}</h2>
+            </div>
           </div>
         </div>
         <button
