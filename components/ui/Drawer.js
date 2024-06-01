@@ -35,12 +35,13 @@ export const DrawerComp = () => {
         width: "100%",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center", // This centers the content horizontally
+        alignItems: "left", // This centers the content horizontally
         justifyContent: "center", // This centers the content vertically (optional)
         height: "100%", //tically centers the content (optional)
+        padding: "90px",
       }}
     >
-      <List sx={{ fontFamily: "cooper" }}>
+      <List>
         <Link href="/products/burgers" className=" hover:text-red-500 ">
           <ListItem disablePadding>
             <ListItemButton component="a" onClick={handleClose}>
@@ -165,7 +166,12 @@ export const DrawerComp = () => {
           />
         </div>
         {DrawerList}
-        <div abc></div>
+        <button
+          className="absolute right-5 top-5 text-2xl"
+          onClick={() => setDrawerOpen(false)}
+        >
+          X
+        </button>
       </Drawer>
     </>
   );
