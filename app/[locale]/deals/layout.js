@@ -5,7 +5,7 @@ const Layout = ({ children }) => (
   <div>
     <main className="flex">
       <div className=" mx-auto flex-none">{children}</div>
-      <div className="z-20 absolute">
+      <div className="z-20 absolute hidden md:block ">
         <NavigationDeals />
       </div>
     </main>

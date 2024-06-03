@@ -92,6 +92,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import burgerIcon from "@/public/icons/products/edited/burger.png"
+import bucketIcon from "@/public/icons/products/edited/bucket.png"
+import drinksIcon from "@/public/icons/products/edited/drinks.png"
+import dessertIcon from "@/public/icons/products/edited/dessert.png"
+
 function NavigationProducts(props) {
   const [shrunk, setShrunk] = useState(false);
   const [isNearFooter, setIsNearFooter] = useState(false);
@@ -139,7 +144,7 @@ function NavigationProducts(props) {
               <li className="pb-4">
                 <Link href="/products/burgers">
                   <Image
-                    src="/icons/products/edited/burger.png"
+                    src={burgerIcon}
                     alt=""
                     className="w-24 hover:scale-110 duration-300"
                     // width={24} height={24}
@@ -149,7 +154,7 @@ function NavigationProducts(props) {
               <li className="pb-4">
                 <Link href="/products/buckets">
                   <Image
-                    src="/icons/products/edited/bucket.png"
+                    src={bucketIcon}
                     alt=""
                     className="w-24 hover:scale-110 duration-300"
                     // width={24} height={24}
@@ -159,7 +164,7 @@ function NavigationProducts(props) {
               <li className="pb-4">
                 <Link href="/products/desserts">
                   <Image
-                    src="/icons/products/edited/dessert.png"
+                    src={dessertIcon}
                     alt=""
                     className="w-24 hover:scale-110 duration-300"
                     // width={24} height={24}
@@ -169,7 +174,7 @@ function NavigationProducts(props) {
               <li className="pb-4">
                 <Link href="/products/drinks">
                   <Image
-                    src="/icons/products/edited/drinks.png"
+                    src={drinksIcon}
                     alt=""
                     className="w-24 hover:scale-110 duration-300"
                     // width={24} height={24} quality={100}

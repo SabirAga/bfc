@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
 import Image from "next/image";
+
 
 const customStyles = {
   content: {
@@ -24,6 +25,20 @@ const customStyles = {
 
 export default function ReactModal({ product, modalOpen, modalClose }) {
   let subtitle;
+  useEffect(() => {
+    // Function to handle the body scroll based on modal state
+    const bodyStyle = document.body.style;
+    if (modalOpen) {
+      bodyStyle.overflow = "hidden"; // Disable scroll when modal is open
+    } else {
+      bodyStyle.overflow = "visible"; // Enable scroll when modal is closed
+    }
+
+    // Cleanup function to set overflow to visible when the component unmounts
+    return () => {
+      bodyStyle.overflow = "visible";
+    };
+  }, [modalOpen]);
 
   return (
     <div className="overflow-visible ">

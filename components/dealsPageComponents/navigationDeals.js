@@ -71,6 +71,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+
+
+import mealsIcon from "@/public/icons/deals/deals.png"
+import menusIcon from "@/public/icons/deals/menus.png"
+
 function NavigationDeals(props) {
   const [shrunk, setShrunk] = useState(false);
   const [isNearFooter, setIsNearFooter] = useState(false);
@@ -80,16 +85,6 @@ function NavigationDeals(props) {
       const scrollY = window.scrollY;
       const footerTop = document.getElementById("footer").offsetTop;
       const scrollPosition = scrollY + window.innerHeight;
-
-      // Logging to debug the scroll and state changes
-      console.log(
-        "Scroll Y: ",
-        scrollY,
-        "Footer Top: ",
-        footerTop,
-        "Scroll Position: ",
-        scrollPosition
-      );
 
       // Update the shrunk state based on scroll position
       if (scrollY > 50) {
@@ -131,7 +126,7 @@ function NavigationDeals(props) {
           <li className="pb-4">
             <Link href="/deals">
               <Image
-                src="/icons/deals/meals.png"
+                src={mealsIcon}
                 alt=""
                 className="w-28 hover:scale-110 duration-300"
               />
@@ -140,7 +135,7 @@ function NavigationDeals(props) {
           <li className="pb-4">
             <Link href="/deals/menus">
               <Image
-                src="/icons/deals/menus.png"
+                src={menusIcon}
                 alt=""
                 className="w-28 hover:scale-110 duration-300"
               />
