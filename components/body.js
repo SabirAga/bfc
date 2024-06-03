@@ -14,8 +14,6 @@ export const Body = () => {
         <h1 className="text-[52px] text-center px-3 font-bold font-cooperBlack">
           {t("hello")}
         </h1>
-        <h1>test</h1>
-        <h1>test</h1>
         <BodyNav />
         <BodyPhotos />
         <BodyNews />
