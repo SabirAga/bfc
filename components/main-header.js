@@ -55,7 +55,7 @@ export const MainHeader = () => {
             shrunk ? "md:-translate-x-7" : ""
           }`}
         >
-          <div className="lg:ml-[14px] lg:p-[10px] lg:pt-[20px] lg:mr-[2px] lg:static absolute md:right-10 right-5 top-10">
+          <div className="lg:ml-[14px] lg:p-[10px] lg:pt-[20px] lg:mr-[2px] lg:static absolute md:right-10 right-5 top-5">
             <DrawerComp />
           </div>
           <nav>
