@@ -54,6 +54,7 @@ function Desserts() {
           <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
             {products(t).map((product, index) => (
                <CardComponentTriple
+               key={product.id}
                product={product}
                index={index}
                openModal={openModal}

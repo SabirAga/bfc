@@ -138,7 +138,7 @@ function NavigationProducts(props) {
             <ul className="-pt-1 ">
               <li className="pb-4">
                 <Link href="/products/burgers">
-                  <img
+                  <Image
                     src="/icons/products/edited/burger.png"
                     alt=""
                     className="w-24 hover:scale-110 duration-300"
@@ -148,7 +148,7 @@ function NavigationProducts(props) {
               </li>
               <li className="pb-4">
                 <Link href="/products/buckets">
-                  <img
+                  <Image
                     src="/icons/products/edited/bucket.png"
                     alt=""
                     className="w-24 hover:scale-110 duration-300"
@@ -158,7 +158,7 @@ function NavigationProducts(props) {
               </li>
               <li className="pb-4">
                 <Link href="/products/desserts">
-                  <img
+                  <Image
                     src="/icons/products/edited/dessert.png"
                     alt=""
                     className="w-24 hover:scale-110 duration-300"
@@ -168,7 +168,7 @@ function NavigationProducts(props) {
               </li>
               <li className="pb-4">
                 <Link href="/products/drinks">
-                  <img
+                  <Image
                     src="/icons/products/edited/drinks.png"
                     alt=""
                     className="w-24 hover:scale-110 duration-300"

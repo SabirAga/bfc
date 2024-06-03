@@ -82,7 +82,11 @@ function Burger() {
           <h1 className="text-4xl mb-8">Chicken Burgers</h1>
           <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
             {chickenBurgers(t).map((product, index) => (
-              <CardComponentDouble product={product} openModal={openModal} />
+              <CardComponentDouble
+                product={product}
+                openModal={openModal}
+                key={product.id}
+              />
             ))}
           </div>
           {isModalOpen && currentProduct && (
@@ -97,7 +101,11 @@ function Burger() {
           <h1 className="text-4xl mb-8">Meat Burgers</h1>
           <div className="grid grid-cols-2 gap-7 justify-items-center ">
             {meatBurgers(t).map((product, index) => (
-              <CardComponentDouble product={product} openModal={openModal} />
+              <CardComponentDouble
+                product={product}
+                key={product.id}
+                openModal={openModal}
+              />
             ))}
           </div>
           {isModalOpen && currentProduct && (
@@ -114,6 +122,7 @@ function Burger() {
           <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
             {specials(t).map((product, index) => (
               <CardComponentTriple
+                key={product.id}
                 product={product}
                 index={index}
                 openModal={openModal}

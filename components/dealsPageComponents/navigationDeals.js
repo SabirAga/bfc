@@ -130,7 +130,7 @@ function NavigationDeals(props) {
         <ul className="-pt-1">
           <li className="pb-4">
             <Link href="/deals">
-              <img
+              <Image
                 src="/icons/deals/meals.png"
                 alt=""
                 className="w-28 hover:scale-110 duration-300"
@@ -139,7 +139,7 @@ function NavigationDeals(props) {
           </li>
           <li className="pb-4">
             <Link href="/deals/menus">
-              <img
+              <Image
                 src="/icons/deals/menus.png"
                 alt=""
                 className="w-28 hover:scale-110 duration-300"

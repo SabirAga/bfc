@@ -52,7 +52,7 @@ function Restaurants(props) {
             <div className="grid grid-cols-2 gap-y-10 justify-items-center">
               {restaurants.map((restaurant) => (
                 <figure key={restaurant.id} className="group relative">
-                  <Image src={restaurant.image} />
+                  <Image src={restaurant.image} alt=""/>
                   <div className="absolute px-4 py-6 w-full bottom-0 h-full flex flex-col justify-between z-10 ">
                     <div className=" group-hover:opacity-100 opacity-0">
                       <h1 className="text-white text-xl">

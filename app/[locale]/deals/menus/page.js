@@ -90,7 +90,7 @@ function Menus() {
           <h1 className="text-4xl mb-8">Menus</h1>
           <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
             {menus(t).map((product, index) => (
-              <CardComponentDouble product={product} openModal={openModal} />
+              <CardComponentDouble key={product.id} product={product} openModal={openModal} />
             ))}
           </div>
           {isModalOpen && currentProduct && (

@@ -60,7 +60,11 @@ function Drinks(props) {
           <h1 className="text-4xl mb-8">Drinks</h1>
           <div className="grid grid-cols-2 gap-x-7 justify-items-center ">
             {products(t).map((product, index) => (
-              <CardComponentDouble product={product} openModal={openModal} />
+              <CardComponentDouble
+                product={product}
+                openModal={openModal}
+                key={product.id}
+              />
             ))}
           </div>
           {isModalOpen && currentProduct && (
