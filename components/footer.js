@@ -17,7 +17,7 @@ export const Footer = () => {
               <div className="grid gap-10 md:flex md:gap-32">
                 <div className="">
                   <h5 className="pb-4 text-2xl font-bold">BFC</h5>
-                  <div className="grid gap-3 md:flex md:gap-40 text-gray-600">
+                  <div className="grid gap-3 md:flex md:gap-28 text-gray-600">
                     <ul className="">
                       <li className="pb-4">
                         <Link href="/products/burgers">{t("products")}</Link>
