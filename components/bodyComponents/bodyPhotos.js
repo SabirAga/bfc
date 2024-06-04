@@ -37,7 +37,7 @@ export const BodyPhotos = () => {
   return (
     <div className="mt-9 mb-[65px]">
       <div className="md:grid">
-        <div className="md:flex  mx-auto md:justify-between md:gap-[18px]">
+        <div className="md:hidden mx-auto md:justify-between md:gap-[18px]">
           <Slider {...settings}>
             {photos.map((photo) => (
               <Image
@@ -50,6 +50,18 @@ export const BodyPhotos = () => {
               />
             ))}
           </Slider>
+        </div>
+        <div className="hidden md:flex  mx-auto md:justify-between md:gap-[18px]">
+          {photos.map((photo) => (
+            <Image
+              key={photo.id}
+              src={photo.src}
+              width={440}
+              height={550}
+              className="rounded-xl w-[350px] xl:w-[450px]"
+              alt={photo.title}
+            />
+          ))}
         </div>
       </div>
     </div>
