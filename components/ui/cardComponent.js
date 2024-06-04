@@ -18,7 +18,7 @@ export const CardComponentDouble = ({ product, openModal }) => {
       <h2 className="relative bottom-[140px] text-2xl xl:text-2xl text-center">
         {product.title}
       </h2>
-      <div className="flex justify-center justify-items-center absolute  bottom-12  mt-3 py-4 px-10 mx-auto">
+      <div className="flex absolute  bottom-12  mt-3 py-4 px-10 mx-auto">
         <button className=" mx-auto py-4 px-10 text-[#422e20] bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
           See more
         </button>
