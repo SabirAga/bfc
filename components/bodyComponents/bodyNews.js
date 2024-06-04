@@ -28,7 +28,7 @@ export const BodyNews = () => {
 
   return (
     <div>
-      <h1 className="text-[54px] text-center px-3 font-bold font-cooperBlack mb-5 ">
+      <h1 className="md:text-[54px] text-5xl text-center px-3 font-bold font-cooperBlack mb-5 ">
         {t("main:whats_new")}
       </h1>
       <div className="">

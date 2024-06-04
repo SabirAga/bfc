@@ -4,10 +4,11 @@ import NavigationMobile from "@/components/productsPageComponents/navigationMobi
 // components/Layout.js
 const Layout = ({ children }) => (
   <div>
-    <main className=" md:flex">
+    <main className="md:flex px-5">
       <div className=" md:hidden mx-auto">
         <NavigationMobile />
       </div>
+
       <div className=" mx-auto flex-none">{children}</div>
 
       <div className="z-20 absolute hidden md:block ">

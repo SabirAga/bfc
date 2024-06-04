@@ -16,6 +16,8 @@ const customStyles = {
     border: "none",
     padding: "0",
     borderRadius: "12px",
+    display:"hidden"
+
   },
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.35)", // Dark semi-transparent background
@@ -41,7 +43,7 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
   }, [modalOpen]);
 
   return (
-    <div className="overflow-visible ">
+    <div className="overflow-visible  ">
       {/* <button onClick={modalOpen}>Open Modal</button> */}
       <Modal
         isOpen={modalOpen}
@@ -50,7 +52,7 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
         style={customStyles}
         appElement={document.getElementById("root") || undefined}
       >
-        <div className="flex">
+        <div className="grid md:flex">
           <li className="grid place-items-center">
             <Image
               src={product.src}
@@ -59,11 +61,11 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
               className="rounded-l-xl shadow-2xl"
               alt="product"
             />
-            <h2 className="absolute text-3xl bottom-28">{product.title}</h2>
+            <h2 className="absolute text-3xl top-[270px] md:bottom-28">{product.title}</h2>
           </li>
-          <div className="w-2/3  flex items-center justify-center p-4 text-center bg-slate-100 rounded-xl">
+          <div className="  flex items-center justify-center p-4 text-center bg-slate-100 rounded-xl">
             <div className="lg:w-[500px] md:max-w-[400px] w-[350px] overflow-auto">
-              <h2 className="text-2xl font-bold ">{product.description}</h2>
+              <h2 className="md:text-2xl text-xl font-bold ">{product.description}</h2>
             </div>
           </div>
         </div>
@@ -74,6 +76,25 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
           ×
         </button>
       </Modal>
+
+      <div className="md:hidden">
+
+      </div>
     </div>
   );
 }
+
+// content: {
+//   top: "50%",
+//   left: "50%",
+//   right: "auto",
+//   bottom: "auto",
+//   marginRight: "-30%",
+//   transform: "translate(-50%, -50%)",
+//   overflow: "visible",
+//   border: "none",
+//   padding: "0",
+//   borderRadius: "12px",
+//   display:"hidden"
+
+// },

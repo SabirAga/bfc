@@ -118,14 +118,14 @@ export const DrawerComp = () => {
             <div className="h-8 border-l border-gray-800"></div>
           </li>
           <li onClick={handleClose}>
-            <Link href="#">
+          <a target="_blank" href="https://www.instagram.com/bfc_belgium/">
               <Image
                 src="/icons/black-instagram-icon.svg"
                 width={30}
                 height={30}
                 alt="instagram"
               />
-            </Link>
+            </a>
           </li>
           <li className="pl-[40px]">
             <LanguageChanger />

@@ -4,7 +4,7 @@ import NavigationDealsMobile from "@/components/dealsPageComponents/navigationDe
 // components/Layout.js
 const Layout = ({ children }) => (
   <div>
-    <main className="md:flex">
+    <main className="md:flex px-5">
       <div className=" md:hidden">
         <NavigationDealsMobile />
       </div>

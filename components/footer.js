@@ -48,34 +48,34 @@ export const Footer = () => {
                   <div className="flex gap-40 text-gray-600">
                     <ul className=" items-center gap-6">
                       <li className="pb-4">
-                        <Link href="#">
+                        <a target="_blank" href="https://deliveroo.be/en/menu/brussels/bruxelles-centre/bfc-anspach">
                           <Image
                             src="/icons/delivery/deliveroo.svg"
                             alt=""
                             width={110}
                             height={50}
                           />
-                        </Link>
+                        </a>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">
+                        <a target="_blank" href="https://www.ubereats.com/be-en/store/bfc/nKwZ6BB3SROK0fUOtjTecQ">
                           <Image
                             src="/icons/delivery/uberEats.svg"
                             alt=""
                             width={110}
                             height={50}
                           />
-                        </Link>
+                        </a>
                       </li>
                       <li className="pb-4">
-                        <Link href="#">
+                        <a target="_blank" href="https://www.takeaway.com/be-en/delivery/food/sint-stevens-woluwe-1932?searchTerm=bfc">
                           <Image
                             src="/icons/delivery/takeaway.svg"
                             alt=""
                             width={140}
                             height={50}
                           />
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -100,14 +100,14 @@ export const Footer = () => {
               <div className="h-8 border-l border-gray-800"></div>
             </li>
             <li>
-              <Link href="#">
+              <a target="_blank" href="https://www.instagram.com/bfc_belgium/">
                 <Image
                   src="/icons/black-instagram-icon.svg"
                   width={30}
                   height={30}
                   alt="instagram"
                 />
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
