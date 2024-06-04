@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ReactModal from "@/components/ui/ReactModal";
 import { CardComponentDouble } from "@/components/ui/cardComponent";
 import { useTranslation } from "react-i18next";
+import { SlickCarousel } from "@/components/ui/carouselComponent";
 
 const meals = (t) => [
   {
@@ -46,14 +47,28 @@ function Meals() {
     setCurrentProduct(null); // Clear the current product when closing the modal
   };
 
+  const translatedProducts = meals(t);
+
   return (
     <div className="md:px-[50px] pt-[68px]">
-      <div className="mt-24 md:pl-[100px] pl-0">
-        <div className="grid place-items-center md:px-9 py-5">
-          <h1 className="text-4xl mb-8">Meals</h1>
-          <div className="grid md:grid-cols-2 gap-x-7 justify-items-center">
+      <div className="mt-24 md:pl-[100px] pl-0 ">
+        <div className=" md:px-9 py-5">
+          <h1 className="text-4xl font-bold text-center text-black mb-8">
+            Meals
+          </h1>
+          <div className="md:hidden">
+            <SlickCarousel
+              products={translatedProducts}
+              openModal={openModal}
+            />
+          </div>
+          <div className="hidden md:grid md:grid-cols-2 gap-x-7 justify-items-center ">
             {meals(t).map((product, index) => (
-              <CardComponentDouble product={product} key={product.id} openModal={openModal} />
+              <CardComponentDouble
+                product={product}
+                key={product.id}
+                openModal={openModal}
+              />
             ))}
           </div>
           {isModalOpen && currentProduct && (

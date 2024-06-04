@@ -4,15 +4,14 @@ import React, { useState } from "react";
 import ReactModal from "@/components/ui/ReactModal";
 import { CardComponentTriple } from "@/components/ui/cardComponent";
 import { useTranslation } from "react-i18next";
+import { SlickCarousel } from "@/components/ui/carouselComponent";
 
-
-const products =(t)=> [
+const products = (t) => [
   {
     id: 1,
     title: "Chocolate Fudge Brownie",
     src: "/images/products/singleItems/desserts/37.png",
     description: t("products:chocolate_fudge_brownie"),
-    
   },
   {
     id: 2,
@@ -44,21 +43,29 @@ function Desserts() {
     setCurrentProduct(null); // Clear the current product when closing the modal
   };
 
+  const translatedProducts = products(t);
+
   return (
     <div className="md:px-[50px] pt-[68px]">
       <div className="mt-24 md:pl-[100px] pl-0 ">
-        <div className=" min-h-screen md:px-9 py-5">
+        <div className=" md:px-9 py-5">
           <h1 className="text-4xl font-bold text-center text-black mb-8">
             Desserts
           </h1>
-          <div className="grid md:grid-cols-2 gap-x-7 justify-items-center ">
+          <div className="md:hidden">
+            <SlickCarousel
+              products={translatedProducts}
+              openModal={openModal}
+            />
+          </div>
+          <div className="hidden md:grid md:grid-cols-2 gap-x-7 justify-items-center ">
             {products(t).map((product, index) => (
-               <CardComponentTriple
-               key={product.id}
-               product={product}
-               index={index}
-               openModal={openModal}
-             />
+              <CardComponentTriple
+                key={product.id}
+                product={product}
+                index={index}
+                openModal={openModal}
+              />
             ))}
           </div>
           {isModalOpen && currentProduct && (

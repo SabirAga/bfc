@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import ReactModal from "@/components/ui/ReactModal";
-import { CardComponentDouble } from "@/components/ui/cardComponent";
+
 import { useTranslation } from "react-i18next";
 import { CardComponentBuckets } from "@/components/ui/cardComponentBuckets";
+import { SlickCarouselBuckets } from "@/components/ui/carouselComponent";
 
 const products = (t) => [
   {
@@ -54,14 +55,28 @@ function Buckets(props) {
     setCurrentProduct(null); // Clear the current product when closing the modal
   };
 
+  const translatedProducts = products(t);
+
   return (
     <div className="md:px-[50px] pt-[68px]">
       <div className="mt-24 md:pl-[100px] pl-0">
-        <div className="grid place-items-center md:px-9 py-5">
-          <h1 className="text-4xl mb-8">Buckets</h1>
-          <div className="grid md:grid-cols-2 gap-x-7 justify-items-center">
+        <div className=" md:px-9 py-5">
+          <h1 className="text-4xl font-bold text-center text-black mb-8">
+            Buckets
+          </h1>
+          <div className="md:hidden">
+            <SlickCarouselBuckets
+              products={translatedProducts}
+              openModal={openModal}
+            />
+          </div>
+          <div className="hidden md:grid md:grid-cols-2 gap-x-7 justify-items-center">
             {products(t).map((product, index) => (
-              <CardComponentBuckets product={product} key={product.id} openModal={openModal} />
+              <CardComponentBuckets
+                product={product}
+                key={product.id}
+                openModal={openModal}
+              />
             ))}
           </div>
           {isModalOpen && currentProduct && (
