@@ -38,7 +38,7 @@ export const DrawerComp = () => {
         alignItems: "left", // This centers the content horizontally
         justifyContent: "center", // This centers the content vertically (optional)
         height: "100%", //tically centers the content (optional)
-        padding: "90px",
+        padding: "70px",
       }}
     >
       <List>

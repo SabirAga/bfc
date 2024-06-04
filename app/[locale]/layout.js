@@ -25,7 +25,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           <head>
             <link rel="stylesheet" href="https://use.typekit.net/iep4nms.css" />
           </head>
-          <body className="font-cooper max-w-[768px] md:max-w-[1280px] xl:max-w-[1830px] mx-auto ">
+          <body className="font-cooper max-w-[768px] md:max-w-[1280px] xl:max-w-[1830px] mx-auto px-2">
             <MainHeader />
             {children}
             <footer>

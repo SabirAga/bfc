@@ -61,7 +61,7 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
               className="rounded-l-xl shadow-2xl"
               alt="product"
             />
-            <h2 className="absolute text-3xl top-[270px] md:bottom-28">{product.title}</h2>
+            <h2 className="absolute text-3xl top-[270px] md:bottom-28 flex left-0 right-0 justify-center">{product.title}</h2>
           </li>
           <div className="  flex items-center justify-center p-4 text-center bg-slate-100 rounded-xl">
             <div className="lg:w-[500px] md:max-w-[400px] w-[350px] overflow-auto">
