@@ -132,7 +132,7 @@ function NavigationProducts(props) {
     "transition-all",
     "duration-300",
     shrunk ? "scale-90" : "",
-    isNearFooter ? "relative mt-44" : "fixed mt-44",
+    isNearFooter ? "relative mt-44" : "fixed mt-48",
   ].join(" ");
 
   return (
@@ -146,7 +146,7 @@ function NavigationProducts(props) {
                   <Image
                     src={burgerIcon}
                     alt=""
-                    className="w-24 hover:scale-110 duration-300"
+                    className="w-28 hover:scale-110 duration-300"
                     // width={24} height={24}
                   />
                 </Link>
@@ -156,7 +156,7 @@ function NavigationProducts(props) {
                   <Image
                     src={bucketIcon}
                     alt=""
-                    className="w-24 hover:scale-110 duration-300"
+                    className="w-28 hover:scale-110 duration-300"
                     // width={24} height={24}
                   />
                 </Link>
@@ -166,7 +166,7 @@ function NavigationProducts(props) {
                   <Image
                     src={dessertIcon}
                     alt=""
-                    className="w-24 hover:scale-110 duration-300"
+                    className="w-28 hover:scale-110 duration-300"
                     // width={24} height={24}
                   />
                 </Link>
@@ -176,7 +176,7 @@ function NavigationProducts(props) {
                   <Image
                     src={drinksIcon}
                     alt=""
-                    className="w-24 hover:scale-110 duration-300"
+                    className="w-28 hover:scale-110 duration-300"
                     // width={24} height={24} quality={100}
                   />
                 </Link>

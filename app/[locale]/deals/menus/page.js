@@ -85,8 +85,8 @@ function Menus() {
   const translatedProducts = menus(t);
 
   return (
-    <div className="md:px-[50px] pt-[68px]">
-      <div className="mt-24 md:pl-[100px] pl-0 ">
+    <div className="md:px-[50px] md:pt-[68px]">
+      <div className="md:mt-24 md:pl-[100px] pl-0">
         <div className=" md:px-9 py-5">
           <h1 className="text-4xl font-bold text-center text-black mb-8">
             Menus

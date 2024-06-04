@@ -71,10 +71,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-
-
-import mealsIcon from "@/public/icons/deals/deals.png"
-import menusIcon from "@/public/icons/deals/menus.png"
+import mealsIcon from "@/public/icons/deals/png/meals.png";
+import menusIcon from "@/public/icons/deals/png/menus.png";
 
 function NavigationDeals(props) {
   const [shrunk, setShrunk] = useState(false);
@@ -109,27 +107,28 @@ function NavigationDeals(props) {
 
   // Construct the class name based on shrunk and isNearFooter states
   const navbarClasses = [
-    "px-[10px]",
+    "px-[20px]",
     "bg-gray-100",
     "w-fit",
     "rounded-xl",
     "transition-all",
     "duration-300",
     shrunk ? "scale-90" : "",
-    isNearFooter ? "relative mt-44" : "fixed mt-44",
+    isNearFooter ? "relative mt-44" : "fixed mt-48",
   ].join(" ");
 
   return (
-    <div className="px-[100px]">
+    <div className="px-[100px] ">
       <div className={navbarClasses}>
-        <ul className="-pt-1">
+        <ul className="pt-4">
           <li className="pb-4">
             <Link href="/deals">
               <Image
                 src={mealsIcon}
                 alt=""
-                className="w-28 hover:scale-110 duration-300"
+                className="w-20 hover:scale-110 duration-300"
               />
+              <h1 className="text-center text-xl ">Meals</h1>
             </Link>
           </li>
           <li className="pb-4">
@@ -137,8 +136,9 @@ function NavigationDeals(props) {
               <Image
                 src={menusIcon}
                 alt=""
-                className="w-28 hover:scale-110 duration-300"
+                className="w-20 hover:scale-110 duration-300"
               />
+              <h1 className="text-center text-xl ">Menus</h1>
             </Link>
           </li>
         </ul>

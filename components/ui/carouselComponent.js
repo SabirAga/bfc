@@ -38,19 +38,19 @@ export const SlickCarousel = ({ products, openModal, category }) => {
   };
 
   return (
-    <div className="w-4/5 m-auto ">
+    <div className=" m-auto ">
       <Slider {...settings}>
         {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="rounded-xl transition duration-300 grid justify-items-center relative"
+            className="rounded-xl transition duration-300 grid justify-items-center mx-auto relative"
             onClick={() => openModal(product)}
           >
             <Image
               src={product.src}
               width={450}
               height={450}
-              className="rounded-xl md:shadow-2xl w-[370px] px-2 xl:w-[450px]"
+              className="rounded-xl md:shadow-2xl mx-auto w-[390px] px-2 xl:w-[450px]"
               alt={product.title}
             />
             <h2 className="relative bottom-[120px] text-xl xl:text-2xl text-center">
@@ -80,7 +80,7 @@ export const SlickCarouselBuckets = ({ products, openModal }) => {
   };
 
   return (
-    <div className="w-4/5 m-auto ">
+    <div className="m-auto ">
       <Slider {...settings}>
         {products.map((product) => (
           <div
@@ -92,10 +92,10 @@ export const SlickCarouselBuckets = ({ products, openModal }) => {
               src={product.src}
               width={450}
               height={450}
-              className="rounded-xl md:shadow-2xl w-[370px] px-2 xl:w-[450px]"
+              className="rounded-xl md:shadow-2xl w-[390px] mx-auto px-2 xl:w-[450px]"
               alt={product.title}
             />
-            <h2 className="relative bottom-[110px] text-xl xl:text-2xl text-center">
+            <h2 className="relative bottom-[110px] text-xl  xl:text-2xl text-center">
               {product.title}
             </h2>
             <div className="absolute bottom-8 mt-3 py-4 px-10 justify-center flex left-0 right-0">
