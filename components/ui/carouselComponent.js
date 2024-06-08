@@ -50,7 +50,7 @@ export const SlickCarousel = ({ products, openModal, category }) => {
               src={product.src}
               width={450}
               height={450}
-              className="rounded-xl md:shadow-2xl mx-auto w-[390px] px-2 xl:w-[450px]"
+              className="rounded-xl md:shadow-2xl mx-auto w-[390px] px-1 xl:w-[450px]"
               alt={product.title}
             />
             <h2 className="relative bottom-[120px] text-xl xl:text-2xl text-center">

@@ -7,10 +7,10 @@ import menusIcon from "@/public/icons/deals/png/menus.png";
 
 function NavigationDealsMobile() {
   return (
-    <div className="pt-[180px] ">
+    <div className="pt-[180px] md:pt-20 mx-auto md:w-[490px]">
       <ul className="flex justify-center gap-7 items-end bg-gray-100 rounded-xl p-[10px]  mx-4">
         <li>
-          <Link href="/products/burgers">
+          <Link href="/deals">
             <Image
               src={mealsIcon}
               alt=""
@@ -21,7 +21,7 @@ function NavigationDealsMobile() {
           </Link>
         </li>
         <li>
-          <Link href="/products/buckets">
+          <Link href="/deals/menus">
             <Image
               src={menusIcon}
               alt=""

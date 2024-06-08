@@ -64,7 +64,7 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
             <h2 className="md:absolute text-3xl pt-7  md:bottom-28 ">{product.title}</h2>
           </li>
           <div className="flex items-center justify-center pt-3 md:p-4 text-center font-serif md:bg-slate-100 rounded-xl">
-            <div className="lg:w-[500px] md:max-w-[400px] w-[350px] overflow-auto p-7 font-thin">
+            <div className="lg:w-[500px] w-[350px] overflow-auto p-7 md:p-4 font-thin">
               <h2 className="md:text-xl text-sm font-bold text-gray-400">{product.description}</h2>
             </div>
           </div>

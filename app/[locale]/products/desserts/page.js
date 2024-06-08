@@ -46,9 +46,9 @@ function Desserts() {
   const translatedProducts = products(t);
 
   return (
-    <div className="md:px-[50px] md:pt-[68px]">
-    <div className="md:mt-24 md:pl-[100px] pl-0 ">
-        <div className=" md:px-9 py-5">
+    <div className=" md:px-[50px] lg:pt-[68px] ">
+      <div className="lg:mt-24 md:mx-auto lg:pl-[100px] pl-0 ">
+        <div className=" md:px-9 py-3 lg:py-5">
           <h1 className="text-4xl font-bold text-center text-black mb-8">
             Desserts
           </h1>

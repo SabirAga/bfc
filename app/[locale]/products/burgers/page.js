@@ -87,9 +87,9 @@ function Burger() {
   const translatedProducts = combinedProducts(t);
 
   return (
-    <div className="md:px-[50px] md:pt-[68px] ">
-      <div className="md:mt-24 md:pl-[100px] pl-0 ">
-        <div className=" md:px-9 py-5">
+    <div className=" md:px-[50px] lg:pt-[68px] ">
+      <div className="lg:mt-24 md:mx-auto lg:pl-[100px] pl-0 ">
+        <div className=" md:px-9 py-3 lg:py-5">
           <h1 className="text-4xl font-bold text-center text-black mb-8">
             Chicken Burgers
           </h1>
@@ -100,7 +100,7 @@ function Burger() {
               category="Chicken Burgers"
             />
           </div>
-          <div className="hidden md:grid md:grid-cols-2 gap-x-7 justify-items-center">
+          <div className="hidden md:grid md:grid-cols-2 gap-x-4 lg:gap-x-7 justify-items-center">
             {chickenBurgers(t).map((product, index) => (
               <CardComponentDouble
                 product={product}
@@ -128,7 +128,7 @@ function Burger() {
               category="Meat Burgers"
             />
           </div>
-          <div className="hidden md:grid md:grid-cols-2 gap-x-7 justify-items-center">
+          <div className="hidden md:grid md:grid-cols-2 gap-x-4 lg:gap-x-7 justify-items-center">
             {meatBurgers(t).map((product, index) => (
               <CardComponentDouble
                 product={product}
@@ -156,7 +156,7 @@ function Burger() {
               category="Specials"
             />
           </div>
-          <div className="hidden md:grid md:grid-cols-2 gap-x-7 justify-items-center">
+          <div className="hidden md:grid md:grid-cols-2 gap-x-4 lg:gap-x-7 justify-items-center">
             {specials(t).map((product, index) => (
               <CardComponentTriple
                 key={product.id}

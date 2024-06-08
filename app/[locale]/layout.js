@@ -4,7 +4,15 @@ import { MainHeader } from "@/components/main-header";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/ui/translationProvider";
 
-const namespaces = ["common", "main", "products", "deals"];
+const namespaces = [
+  "common",
+  "main",
+  "products",
+  "deals",
+  "termsOfUse",
+  "privacyPolicy",
+  "franchising",
+];
 
 export const metadata = {
   title: "BFC",
@@ -25,7 +33,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           <head>
             <link rel="stylesheet" href="https://use.typekit.net/iep4nms.css" />
           </head>
-          <body className="font-cooper max-w-[768px] md:max-w-[1280px] xl:max-w-[1830px] mx-auto px-2">
+          <body className="font-cooper    px-2">
             <MainHeader />
             {children}
             <footer>

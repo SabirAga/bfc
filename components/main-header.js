@@ -28,9 +28,6 @@ export const MainHeader = () => {
     };
   }, []);
 
-  const classesShrunkLg =
-    "-translate-x-7 flex items-center transition-all duration-300";
-  const classesLg = "flex items-center transition-all duration-300";
 
   return (
     <div className="flex justify-between fixed z-50 py-[9px] px-[10px] md:px-[50px] w-full  bg-white max-w-[540px] md:max-w-[1280px] xl:max-w-[1830px]">
@@ -52,10 +49,10 @@ export const MainHeader = () => {
         </div>
         <div
           className={`flex items-center transition-all duration-300 ${
-            shrunk ? "md:-translate-x-7" : ""
+            shrunk ? "lg:-translate-x-7" : ""
           }`}
         >
-          <div className="lg:ml-[14px] lg:p-[10px] lg:pt-[20px] lg:mr-[2px] lg:static absolute md:right-10 right-5 top-5">
+          <div className="lg:ml-[14px] lg:p-[10px] lg:pt-[20px] lg:mr-[2px] lg:static absolute md:right-14 lg:right-10 right-5 top-5">
             <DrawerComp />
           </div>
           <nav>

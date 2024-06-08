@@ -9,9 +9,12 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer id="footer" className="mt-[75px]  mx-[50px] border-t-2 border-[#cccccc] pt-[50px] ">
+    <footer
+      id="footer"
+      className="mt-[75px]  mx-[50px] border-t-2 border-[#cccccc] pt-[50px] "
+    >
       <div className="px-[50px]  font-bold">
-        <div >
+        <div>
           <div id="left">
             <div className="pb-20  ">
               <div className="grid gap-10 md:flex md:gap-32">
@@ -26,14 +29,11 @@ export const Footer = () => {
                         <Link href="/deals">{t("deals")}</Link>
                       </li>
                       <li className="pb-4">
-                        <Link href="/products/kids">{t("kids")}</Link>
+                        <Link href="/restaurants">{t("restaurants")}</Link>
                       </li>
                     </ul>
                     <div className="border-t-2 border-slate-200 pb-2 md:border-none "></div>
                     <ul>
-                      <li className="pb-4">
-                        <Link href="/restaurants">{t("restaurants")}</Link>
-                      </li>
                       <li className="pb-4">
                         <Link href="/our-story">{t("our_history")}</Link>
                       </li>
@@ -48,7 +48,10 @@ export const Footer = () => {
                   <div className="flex gap-40 text-gray-600">
                     <ul className=" items-center gap-6">
                       <li className="pb-4">
-                        <a target="_blank" href="https://deliveroo.be/en/menu/brussels/bruxelles-centre/bfc-anspach">
+                        <a
+                          target="_blank"
+                          href="https://deliveroo.be/en/menu/brussels/bruxelles-centre/bfc-anspach"
+                        >
                           <Image
                             src="/icons/delivery/deliveroo.svg"
                             alt=""
@@ -58,7 +61,10 @@ export const Footer = () => {
                         </a>
                       </li>
                       <li className="pb-4">
-                        <a target="_blank" href="https://www.ubereats.com/be-en/store/bfc/nKwZ6BB3SROK0fUOtjTecQ">
+                        <a
+                          target="_blank"
+                          href="https://www.ubereats.com/be-en/store/bfc/nKwZ6BB3SROK0fUOtjTecQ"
+                        >
                           <Image
                             src="/icons/delivery/uberEats.svg"
                             alt=""
@@ -68,7 +74,10 @@ export const Footer = () => {
                         </a>
                       </li>
                       <li className="pb-4">
-                        <a target="_blank" href="https://www.takeaway.com/be-en/delivery/food/sint-stevens-woluwe-1932?searchTerm=bfc">
+                        <a
+                          target="_blank"
+                          href="https://www.takeaway.com/be-en/menu/bfc-1"
+                        >
                           <Image
                             src="/icons/delivery/takeaway.svg"
                             alt=""
