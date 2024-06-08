@@ -50,7 +50,7 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
         style={customStyles}
         appElement={document.getElementById("root") || undefined}
       >
-        <div className="grid md:flex">
+        <div className="grid md:flex ">
           <li className="grid place-items-center">
             <Image
               src={product.src}
@@ -59,13 +59,13 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
               className="rounded-l-xl md:shadow-2xl"
               alt="product"
             />
-            <h2 className="md:absolute text-xl lg:text-3xl pt-7 md:bottom-20  lg:bottom-28 ">
+            <h2 className="md:absolute text-xl md:r-0 md:l-0 lg:text-3xl pt-7 md:bottom-20  lg:bottom-28 ">
               {product.title}
             </h2>
           </li>
-          <div className="flex items-center justify-center pt-3 md:p-4 text-center font-serif md:bg-slate-100 rounded-xl">
-            <div className="lg:w-[500px] md:w-[400px] w-[350px] overflow-auto p-7 md:p-0 font-thin">
-              <h2 className="md:text-xl text-sm font-bold text-gray-400">
+          <div className="flex items-center justify-center pt-3 lg:p-4 md:px-1 text-center font-serif lg:bg-slate-100 rounded-xl">
+            <div className="lg:w-[500px] w-[350px] overflow-auto p-7 md:p-0 font-thin">
+              <h2 className="lg:text-xl text-sm font-bold text-gray-400">
                 {product.description}
               </h2>
             </div>
