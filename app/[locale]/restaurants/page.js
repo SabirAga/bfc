@@ -50,8 +50,8 @@ const restaurants = [
 function Restaurants(props) {
   return (
     <>
-      <div className="md:px-[50px] md:pt-[68px] px-5 ">
-        <div className="md:mt-24 md:pl-[100px] pl-0 ">
+      <div className="mx-auto lg:px-[50px] md:pt-[68px] px-5 ">
+        <div className="md:mt-24 mx-auto pl-0 ">
           <div id="cards" className="pt-44 md:pt-0">
             <h1 className="text-4xl mb-8 text-center">Restaurants</h1>
             <div className="grid md:grid-cols-2 gap-10 justify-items-center">

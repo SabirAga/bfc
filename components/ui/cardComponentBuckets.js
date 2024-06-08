@@ -19,7 +19,7 @@ export const CardComponentBuckets = ({ product, openModal }) => {
         {product.title}
       </h2>
       <div className="flex justify-items-center absolute bottom-8 md:bottom-19 lg:bottom-12  mt-3 py-4 px-10 mx-auto">
-        <button className="py-4 px-10 text-[#422e20] bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
+        <button className="py-4 px-10 text-[#422e20] md:flex md:r-0 md:l-0 bg-gray-300 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-[#ff6307] hover:text-white">
           See more
         </button>
       </div>

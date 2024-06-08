@@ -27,7 +27,7 @@ const photos = [
 ];
 export const BodyPhotos = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -37,7 +37,7 @@ export const BodyPhotos = () => {
   return (
     <div className="mt-9 mb-[65px]">
       <div className="lg:grid">
-        <div className="lg:hidden mx-auto md:justify-between md:gap-[18px]">
+        <div className="lg:hidden mx-auto md:justify-between">
           <Slider {...settings}>
             {photos.map((photo) => (
               <Image

@@ -1,8 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
 import Image from "next/image";
-
 
 const customStyles = {
   content: {
@@ -16,8 +15,7 @@ const customStyles = {
     border: "none",
     padding: "0",
     borderRadius: "12px",
-    display:"hidden"
-
+    display: "hidden",
   },
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.35)", // Dark semi-transparent background
@@ -61,11 +59,15 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
               className="rounded-l-xl md:shadow-2xl"
               alt="product"
             />
-            <h2 className="md:absolute text-3xl pt-7  md:bottom-28 ">{product.title}</h2>
+            <h2 className="md:absolute text-xl lg:text-3xl pt-7 md:bottom-20  lg:bottom-28 ">
+              {product.title}
+            </h2>
           </li>
           <div className="flex items-center justify-center pt-3 md:p-4 text-center font-serif md:bg-slate-100 rounded-xl">
-            <div className="lg:w-[500px] w-[350px] overflow-auto p-7 md:p-4 font-thin">
-              <h2 className="md:text-xl text-sm font-bold text-gray-400">{product.description}</h2>
+            <div className="lg:w-[500px] md:w-[400px] w-[350px] overflow-auto p-7 md:p-0 font-thin">
+              <h2 className="md:text-xl text-sm font-bold text-gray-400">
+                {product.description}
+              </h2>
             </div>
           </div>
         </div>
@@ -77,9 +79,7 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
         </button>
       </Modal>
 
-      <div className="md:hidden">
-
-      </div>
+      <div className="md:hidden"></div>
     </div>
   );
 }
