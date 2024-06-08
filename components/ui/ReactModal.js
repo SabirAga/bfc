@@ -59,7 +59,7 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
               className="rounded-l-xl md:shadow-2xl"
               alt="product"
             />
-            <h2 className="md:absolute text-xl md:flex md:justify-center  lg:flex-none  md:mx-auto  lg:text-3xl pt-7 md:bottom-20  lg:bottom-28 ">
+            <h2 className="md:absolute text-xl md:flex md:justify-center md:left-0 md:right-0 lg:flex-none lg:justify-start lg:left-auto lg:right-auto lg:text-3xl pt-7 md:bottom-20  lg:bottom-28 ">
               {product.title}
             </h2>
           </li>
