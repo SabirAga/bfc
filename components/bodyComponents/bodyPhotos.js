@@ -35,7 +35,7 @@ export const BodyPhotos = () => {
   };
 
   return (
-    <div className="mt-9 mb-[65px]">
+    <div className="mt-9 lg:mb-[65px]">
       <div className="lg:grid">
         <div className="lg:hidden mx-auto md:justify-between">
           <Slider {...settings}>
