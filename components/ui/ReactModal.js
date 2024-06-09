@@ -59,9 +59,11 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
               className="rounded-l-xl md:shadow-2xl"
               alt="product"
             />
-            <h2 className="md:absolute text-xl md:flex md:justify-center md:left-0 md:right-0 lg:flex-none lg:justify-start lg:left-auto lg:right-auto lg:text-3xl pt-7 md:bottom-20 mx-auto lg:bottom-28 ">
-              {product.title}
-            </h2>
+            <div className="flex justify-center lg:flex-none">
+              <h2 className="md:absolute text-xl lg:text-3xl pt-7 md:bottom-20 lg:bottom-28 ">
+                {product.title}
+              </h2>
+            </div>
           </li>
           <div className="flex items-center justify-center pt-3 lg:p-4 md:px-1 text-center font-serif lg:bg-slate-100 rounded-xl">
             <div className="lg:w-[500px] w-[350px] overflow-auto p-7 md:p-0 font-thin">
@@ -78,8 +80,6 @@ export default function ReactModal({ product, modalOpen, modalClose }) {
           ×
         </button>
       </Modal>
-
-      <div className="md:hidden"></div>
     </div>
   );
 }

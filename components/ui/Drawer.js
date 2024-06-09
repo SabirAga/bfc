@@ -103,7 +103,7 @@ export const DrawerComp = () => {
       <Divider />
 
       <div id="socials" className="mt-24 pl-5">
-        <ul className="flex items-center space-x-6">
+        <ul className="flex items-center space-x-6 pb-5">
           <li onClick={handleClose}>
             <Link href="#">
               <Image
@@ -118,7 +118,7 @@ export const DrawerComp = () => {
             <div className="h-8 border-l border-gray-800"></div>
           </li>
           <li onClick={handleClose}>
-          <a target="_blank" href="https://www.instagram.com/bfc_belgium/">
+            <a target="_blank" href="https://www.instagram.com/bfc_belgium/">
               <Image
                 src="/icons/black-instagram-icon.svg"
                 width={30}

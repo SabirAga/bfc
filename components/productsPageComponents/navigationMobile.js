@@ -9,7 +9,7 @@ import dessertIcon from "@/public/icons/products/edited/dessert.png";
 
 function NavigationMobile() {
   return (
-    <div className="pt-[180px] md:pt-20 mx-auto md:w-[490px]">
+    <div className="pt-[180px] md:pt-20 mx-auto md:mr-9 md:w-[490px]">
       <ul className="flex md:justify-center items-end bg-gray-100 rounded-xl p-[10px]  mx-4">
         <li className="pb-[3px]">
           <Link href="/products/burgers">

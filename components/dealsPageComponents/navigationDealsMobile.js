@@ -7,7 +7,7 @@ import menusIcon from "@/public/icons/deals/png/menus.png";
 
 function NavigationDealsMobile() {
   return (
-    <div className="pt-[180px] md:pt-20 mx-auto md:w-[490px]">
+    <div className="pt-[180px] md:pt-20 mx-auto md:mr-9 md:w-[350px]">
       <ul className="flex justify-center gap-7 items-end bg-gray-100 rounded-xl p-[10px]  mx-4">
         <li>
           <Link href="/deals">
