@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 // function SamplePrevArrow(props) {
@@ -32,13 +32,26 @@ export const SlickCarousel = ({ products, openModal, category }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    ccsEase: 'linear'
   };
 
+  useEffect(() => {
+    const slider = document.querySelector('.slick-slider');
+    const preventScroll = (e) => e.preventDefault();
+
+    slider.addEventListener('touchmove', preventScroll, { passive: false });
+
+    return () => {
+        slider.removeEventListener('touchmove', preventScroll);
+    };
+}, []);
+
+
   return (
-    <div className=" m-auto ">
+    <div className=" m-auto">
       <Slider {...settings}>
         {filteredProducts.map((product) => (
           <div
