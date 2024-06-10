@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-// Install Swiper modules
+
 
 const photos = [
   {
@@ -51,7 +51,7 @@ export const BodyPhotos = () => {
       <div className="lg:hidden ">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
-          // adjust space between slides
+
           slidesPerView={1} // how many slides to show in view
           loop={true} // infinite loop
           // autoplay={{

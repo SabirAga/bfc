@@ -6,9 +6,8 @@ import {
   CardComponentDouble,
   CardComponentTriple,
 } from "@/components/ui/cardComponent";
-import NavigationProducts from "@/components/productsPageComponents/navigation";
 import { useTranslation } from "react-i18next";
-import { SlickCarousel } from "@/components/ui/carouselComponent";
+import { Carousel } from "@/components/ui/carouselComponent";
 
 const chickenBurgers = (t) => [
   {
@@ -94,7 +93,7 @@ function Burger() {
             Chicken Burgers
           </h1>
           <div className="md:hidden">
-            <SlickCarousel
+            <Carousel
               products={translatedProducts}
               openModal={openModal}
               category="Chicken Burgers"
@@ -122,7 +121,7 @@ function Burger() {
             Meat Burgers
           </h1>
           <div className="md:hidden">
-            <SlickCarousel
+            <Carousel
               products={translatedProducts}
               openModal={openModal}
               category="Meat Burgers"
@@ -150,7 +149,7 @@ function Burger() {
             Specials
           </h1>
           <div className="md:hidden">
-            <SlickCarousel
+            <Carousel
               products={translatedProducts}
               openModal={openModal}
               category="Specials"
