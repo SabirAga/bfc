@@ -113,7 +113,7 @@ export const CarouselBuckets = ({ products, openModal }) => {
         pagination={true}
       >
         {products.map((product) => (
-          <SwiperSlide >
+          <SwiperSlide key={product.id}>
             <div
               key={product.id}
               className="rounded-xl transition duration-300 grid justify-items-center relative"
