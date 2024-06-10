@@ -12,6 +12,7 @@ const namespaces = [
   "termsOfUse",
   "privacyPolicy",
   "franchising",
+  "story",
 ];
 
 export const metadata = {
