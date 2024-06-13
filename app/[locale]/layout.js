@@ -12,6 +12,7 @@ const namespaces = [
   "termsOfUse",
   "privacyPolicy",
   "franchising",
+  "story",
 ];
 
 export const metadata = {
@@ -33,7 +34,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           <head>
             <link rel="stylesheet" href="https://use.typekit.net/iep4nms.css" />
           </head>
-          <body className="font-cooper    px-2">
+          <body className="font-cooper px-2">
             <MainHeader />
             {children}
             <footer>

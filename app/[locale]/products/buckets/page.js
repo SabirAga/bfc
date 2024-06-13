@@ -4,7 +4,7 @@ import ReactModal from "@/components/ui/ReactModal";
 
 import { useTranslation } from "react-i18next";
 import { CardComponentBuckets } from "@/components/ui/cardComponentBuckets";
-import { SlickCarouselBuckets } from "@/components/ui/carouselComponent";
+import { CarouselBuckets } from "@/components/ui/carouselComponent";
 
 const products = (t) => [
   {
@@ -65,7 +65,7 @@ function Buckets(props) {
             Buckets
           </h1>
           <div className="md:hidden">
-            <SlickCarouselBuckets
+            <CarouselBuckets
               products={translatedProducts}
               openModal={openModal}
             />

@@ -11,17 +11,17 @@ export const Footer = () => {
   return (
     <footer
       id="footer"
-      className="mt-[75px]  mx-[50px] border-t-2 border-[#cccccc] pt-[50px] "
+      className="mt-[75px] mx-[50px] border-t-2 border-[#cccccc] pt-[50px] "
     >
-      <div className="px-[50px]  font-bold">
+      <div className="px-[50px] lg:px-[150px] font-bold">
         <div>
           <div id="left">
             <div className="pb-20  ">
               <div className="grid gap-10 md:flex md:gap-32">
                 <div className="">
                   <h5 className="pb-4 text-2xl font-bold">BFC</h5>
-                  <div className="grid gap-3 md:flex md:gap-28 text-gray-600">
-                    <ul className="">
+                  <div className="grid gap-3 md:flex  text-gray-600">
+                    <ul className="lg:flex lg:gap-6">
                       <li className="pb-4">
                         <Link href="/products/burgers">{t("products")}</Link>
                       </li>
@@ -33,7 +33,7 @@ export const Footer = () => {
                       </li>
                     </ul>
                     <div className="border-t-2 border-slate-200 pb-2 md:border-none "></div>
-                    <ul>
+                    <ul className="lg:flex lg:gap-6">
                       <li className="pb-4">
                         <Link href="/our-story">{t("our_history")}</Link>
                       </li>
@@ -43,57 +43,54 @@ export const Footer = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="">
-                  <h5 className="pb-4 text-2xl font-bold">{t("delivery")}</h5>
-                  <div className="flex gap-40 text-gray-600">
-                    <ul className=" items-center gap-6">
-                      <li className="pb-4">
-                        <a
-                          target="_blank"
-                          href="https://deliveroo.be/en/menu/brussels/bruxelles-centre/bfc-anspach"
-                        >
-                          <Image
-                            src="/icons/delivery/deliveroo.svg"
-                            alt=""
-                            width={110}
-                            height={50}
-                          />
-                        </a>
-                      </li>
-                      <li className="pb-4">
-                        <a
-                          target="_blank"
-                          href="https://www.ubereats.com/be-en/store/bfc/nKwZ6BB3SROK0fUOtjTecQ"
-                        >
-                          <Image
-                            src="/icons/delivery/uberEats.svg"
-                            alt=""
-                            width={110}
-                            height={50}
-                          />
-                        </a>
-                      </li>
-                      <li className="pb-4">
-                        <a
-                          target="_blank"
-                          href="https://www.takeaway.com/be-en/menu/bfc-1"
-                        >
-                          <Image
-                            src="/icons/delivery/takeaway.svg"
-                            alt=""
-                            width={140}
-                            height={50}
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              </div>
+              <div className="lg:absolute lg:right-[140px] lg:-mt-[80px] ">
+                <ul>
+                  <li className="pb-6">
+                    <a
+                      target="_blank"
+                      href="https://deliveroo.be/en/menu/brussels/bruxelles-centre/bfc-anspach"
+                    >
+                      <Image
+                        src="/icons/delivery/deliveroo.svg"
+                        alt=""
+                        width={110}
+                        height={50}
+                      />
+                    </a>
+                  </li>
+                  <li className="pb-6">
+                    <a
+                      target="_blank"
+                      href="https://www.ubereats.com/be-en/store/bfc/nKwZ6BB3SROK0fUOtjTecQ"
+                    >
+                      <Image
+                        src="/icons/delivery/uberEats.svg"
+                        alt=""
+                        width={110}
+                        height={50}
+                      />
+                    </a>
+                  </li>
+                  <li className="pb-4">
+                    <a
+                      target="_blank"
+                      href="https://www.takeaway.com/be-en/menu/bfc-1"
+                    >
+                      <Image
+                        src="/icons/delivery/takeaway.svg"
+                        alt=""
+                        width={140}
+                        height={50}
+                      />
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div id="socials" className="-mt-[25px]">
+        <div id="socials" className="-mt-[25px]  ">
           <ul className="flex items-center space-x-6">
             <li>
               <Link href="#">
@@ -122,7 +119,7 @@ export const Footer = () => {
         </div>
       </div>
       <div id="bottom" className="mt-[35px] py-10 border-t-2 border-[#cccccc]">
-        <ul className="flex px-[50px] space-x-6">
+        <ul className="flex px-[50px]  space-x-6 font-sans text-sm ">
           <li>
             <Link href="/privacy-policy">Privacy Policy</Link>
           </li>

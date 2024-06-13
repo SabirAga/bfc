@@ -28,9 +28,8 @@ export const MainHeader = () => {
     };
   }, []);
 
-
   return (
-    <div className="flex justify-between fixed z-50 py-[9px] px-[10px] md:px-[50px] w-full  bg-white max-w-[540px] md:max-w-[1280px] xl:max-w-[1830px]">
+    <div className="flex justify-between fixed z-50 py-[9px] px-[10px] md:px-[50px] w-full  bg-white max-w-[540px] md:max-w-[1280px] xl:max-w-[2000px]">
       <header className="flex items-center h-[50px]">
         <div className="">
           <Link href="/">

@@ -1,12 +1,19 @@
-import bodyImg from "@/public/images/placeholders/bodyImg.jpg";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import soHot from "@/public/images/photos/soHot.png";
-import crunchy from "@/public/images/photos/crunchy.png";
-import menu from "@/public/images/photos/menu.png";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+
+
 
 const photos = [
   {
@@ -26,17 +33,49 @@ const photos = [
   },
 ];
 export const BodyPhotos = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 1400,
+  //   speed: 1000,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   cssEase: "linear",
+  //   pauseOnFocus: false,
+  //   pauseOnHover: true,
+  // };
 
   return (
-    <div className="mt-9 md:mb-[65px]">
-      <div className="lg:hidden mx-auto">
+    <div className="mt-9 mb-20 md:mb-[65px]">
+      <div className="lg:hidden ">
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+
+          slidesPerView={1} // how many slides to show in view
+          loop={true} // infinite loop
+          // autoplay={{
+          //   delay: 1500,
+          //   disableOnInteraction: false, // continue autoplay after interaction
+          // }}
+          centeredSlides={true}
+          pagination={true}
+        >
+          {photos.map((photo) => (
+            <SwiperSlide key={photo.id}>
+              <img
+                src={photo.src}
+                width={440}
+                height={440}
+                className="rounded-xl  xl:w-[450px] px-1"
+                alt={photo.title}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* <div className="lg:hidden mx-auto">
         <Slider {...settings}>
           {photos.map((photo) => (
             <Image
@@ -49,7 +88,7 @@ export const BodyPhotos = () => {
             />
           ))}
         </Slider>
-      </div>
+      </div> */}
       <div className="hidden lg:flex  mx-auto md:justify-between md:gap-[18px]">
         {photos.map((photo) => (
           <Image

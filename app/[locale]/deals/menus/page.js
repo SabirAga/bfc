@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import ReactModal from "@/components/ui/ReactModal";
 import { CardComponentDouble } from "@/components/ui/cardComponent";
 import { useTranslation } from "react-i18next";
-import { SlickCarousel } from "@/components/ui/carouselComponent";
+import { Carousel } from "@/components/ui/carouselComponent";
 
 const menus = (t) => [
   {
@@ -92,10 +92,7 @@ function Menus() {
             Menus
           </h1>
           <div className="md:hidden">
-            <SlickCarousel
-              products={translatedProducts}
-              openModal={openModal}
-            />
+            <Carousel products={translatedProducts} openModal={openModal} />
           </div>
           <div className="hidden md:grid md:grid-cols-2 gap-x-7 justify-items-center ">
             {menus(t).map((product, index) => (

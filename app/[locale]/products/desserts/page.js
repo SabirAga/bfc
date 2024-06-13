@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import ReactModal from "@/components/ui/ReactModal";
 import { CardComponentTriple } from "@/components/ui/cardComponent";
 import { useTranslation } from "react-i18next";
-import { SlickCarousel } from "@/components/ui/carouselComponent";
+import { Carousel } from "@/components/ui/carouselComponent";
 
 const products = (t) => [
   {
@@ -53,7 +53,7 @@ function Desserts() {
             Desserts
           </h1>
           <div className="md:hidden">
-            <SlickCarousel
+            <Carousel
               products={translatedProducts}
               openModal={openModal}
             />
