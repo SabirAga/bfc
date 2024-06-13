@@ -6,7 +6,6 @@ import {
   CardComponentDouble,
   CardComponentTriple,
 } from "@/components/ui/cardComponent";
-import NavigationProducts from "@/components/productsPageComponents/navigation";
 import { useTranslation } from "react-i18next";
 import { Carousel } from "@/components/ui/carouselComponent";
 

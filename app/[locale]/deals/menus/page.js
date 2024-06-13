@@ -92,7 +92,12 @@ function Menus() {
             Menus
           </h1>
           <div className="md:hidden">
-            <Carousel products={translatedProducts} openModal={openModal} />
+
+            <Carousel
+              products={translatedProducts}
+              openModal={openModal}
+            />
+
           </div>
           <div className="hidden md:grid md:grid-cols-2 gap-x-7 justify-items-center ">
             {menus(t).map((product, index) => (
