@@ -7,7 +7,6 @@ import { useTranslation } from "react-i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-<<<<<<< HEAD
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,52 +14,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-
-
-=======
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       onClick={onClick}
-//       style={{
-//         ...style,
-//         display: "block",
-//         transform: "scale(1.7)",
-//         marginLeft: "-20px",
-//         marginRight: "-20px",
-//         backgroundColor: "black",
-//       }}
-//     />
-//   );
-// }
-
->>>>>>> ce76801a21ae1269a13d8676815e1c29a8b8bde1
 export const Carousel = ({ products, openModal, category }) => {
   const filteredProducts = category
     ? products.filter((product) => product.category === category)
     : products;
   const { t } = useTranslation();
-
-<<<<<<< HEAD
-=======
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 1000,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   ccsEase: "linear",
-  // };
->>>>>>> ce76801a21ae1269a13d8676815e1c29a8b8bde1
 
   return (
     <div className=" m-auto">
